@@ -1,0 +1,143 @@
+:root{
+    --brand-color: #e03616;
+    --body-bg-color :#f3f3f3;
+    --category-card-bg-color: #93b5c6;
+    --service-card-bg-color : #ece6d2; 
+    --service-card-img-seperator-color: #a3976e;
+    --service-card-rating-color: #DAA520;
+    --card-shadow-color: rgba(0,0,0,0.2);
+}
+
+body{
+    background-color: var(--body-bg-color);
+    font-family: 'Sen', sans-serif;
+}
+
+#navbar{
+    transition: 0.5s;
+}
+
+.wislah-brand{
+    font-size: 3rem;
+    color: var(--brand-color);
+    letter-spacing: 8px; 
+    font-weight: 800;
+    transition: 0.3s;
+}
+.wislah-brand:hover{
+    transition: 0.3s;
+    color: #58949c;
+    letter-spacing: 2px;
+    padding-left: 14px;
+}
+
+.wislah-nav-item{
+    color: var(--brand-color);
+    transition: 0.3s;
+}
+.wislah-nav-item:hover{
+    color: var(--brand-color);
+    background-color: #dddddd;
+    border-left: 2px solid var(--brand-color);
+    border-right: 2px solid var(--brand-color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.wislah-nav-item-icon{
+    color: var(--brand-color);
+    transition: 0.3s;
+}
+.wislah-nav-item-icon:hover{
+    color: rgb(255, 5, 5);
+    background-color: #dddddd;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.wislah-sign-in-from{
+    float: right;
+    margin-right: 30%;
+}
+
+.category-card{
+    margin: 15px;
+    background-color: var(--category-card-bg-color);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 9rem;
+    max-height: 9rem;
+
+    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+    transition: 0.3s;
+}
+.category-card:hover{
+    box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+    cursor: pointer;
+}
+
+.category-card-img{
+    font-size: 4rem;
+    margin: 5px;
+}
+
+.category-card-title{
+    border-radius:5px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.service-card{
+    margin: 100px 15px;
+    background-color: var(--service-card-bg-color);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 17rem;
+
+    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+    transition: 0.3s;
+}
+.service-card:hover{
+    box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+    cursor: pointer;
+}
+
+.service-card-img{
+    margin-top: -100px;
+    padding-bottom: 4px;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--service-card-img-seperator-color);
+    border-bottom: 2px solid var(--service-card-img-seperator-color);
+    border-radius: 5px;
+}
+
+.service-card-title{
+    font-weight: 800;
+}
+
+.service-card-freelancer{
+    float: left;
+}
+
+.service-card-rating{
+    color: var(--service-card-rating-color);
+    float: right;
+    font-size: 1.2rem;
+}
+
+.service-card-description{
+    clear: both;
+    float: left;
+}
+
+/* I just want the main container to be larger than what was default in bootstrap so I increased it for container */
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1340px;
+    }
+}
+@media (min-width: 1600px) {
+    .container{
+        max-width: 1540px;
+    }
+}
