@@ -3,6 +3,7 @@
     --body-bg-color :#f3f3f3;
     --category-card-bg-color: #93b5c6;
     --category-card-content-color: #0f0f0f;
+    --search-bar-bg-color: #ffffff;
     --service-card-bg-color : #ece6d2; 
     --service-card-img-seperator-color: #a3976e;
     --service-card-rating-color: #DAA520;
@@ -58,6 +59,34 @@ body{
 .wislah-sign-in-from{
     float: right;
     margin-right: 30%;
+}
+
+.search-menu{
+    margin: 10px 0px;
+}
+
+.search-bar{
+    font-size: 1.5rem;
+    background-color: var(--search-bar-bg-color);
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right-style: none;
+    margin-right: 0px;
+}
+.search-bar-btn{
+    font-size: 1.5rem;
+    background-color: var(--search-bar-bg-color);
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: -5px
+}
+
+.search-bar:focus, .search-bar-btn:focus{
+    outline: none;
 }
 
 .category-card{
