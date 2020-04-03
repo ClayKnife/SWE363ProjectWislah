@@ -1,0 +1,126 @@
+:root{
+    --category-card-bg-color: #93b5c6;
+    --category-card-content-color: #0f0f0f;
+    --search-bar-bg-color: #ffffff;
+    --search-bar-border-color: #888888;
+    --search-bar-btn-seperator-color: #aaaaaa;
+    --service-card-bg-color : #ece6d2; 
+    --service-card-img-seperator-color: #a3976e;
+    --service-card-rating-color: #DAA520;
+    --card-shadow-color: rgba(0,0,0,0.2);
+}
+
+.search-menu{
+    margin: 10px 0px;
+}
+
+.search-bar{
+    font-size: 1.5rem;
+    background-color: var(--search-bar-bg-color);
+    padding: 10px 10px 10px 20px;
+    border: 1px solid var(--search-bar-border-color);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right-style: none;
+    margin-right: 0px;
+}
+.search-bar-btn{
+    font-size: 1.5rem;
+    background-color: var(--search-bar-bg-color);
+    padding: 10px 20px 10px 10px;
+    border: 1px solid var(--search-bar-border-color);
+    border-left-color: var(--search-bar-btn-seperator-color);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left: -5px
+}
+
+.search-bar:focus, .search-bar-btn:focus{
+    outline: none;
+}
+
+.category-card{
+    margin: 15px;
+    background-color: var(--category-card-bg-color);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 9rem;
+    max-height: 9rem;
+
+    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+    transition: 0.3s;
+}
+.category-card:hover{
+    box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+    cursor: pointer;
+}
+
+.category-card-img{
+    color: var(--category-card-content-color);
+    font-size: 4rem;
+    margin: 5px;
+}
+
+.category-card-title{
+    color: var(--category-card-content-color);
+    font-size: 1rem;
+    padding-bottom: 4px;
+    font-weight: 800;
+    transition: 0.15s;
+}
+.category-card:hover .category-card-title{
+    color: var(--category-card-content-color);
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    transition: 0.15s;
+}
+
+.service-card{
+    margin: 100px 15px;
+    background-color: var(--service-card-bg-color);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 17rem;
+
+    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+    transition: 0.3s;
+}
+.service-card:hover{
+    box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+    cursor: pointer;
+}
+
+.service-card-img{
+    margin-top: -100px;
+    padding-bottom: 4px;
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--service-card-img-seperator-color);
+    border-bottom: 2px solid var(--service-card-img-seperator-color);
+    border-radius: 5px;
+}
+
+.service-card-title{
+    font-weight: 800;
+}
+
+.service-card-freelancer{
+    float: left;
+}
+
+.service-card-rating{
+    color: var(--service-card-rating-color);
+    float: right;
+    font-size: 1.2rem;
+}
+
+.service-review-count{
+    color: #0f0f0f;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+
+.service-card-description{
+    clear: both;
+    float: left;
+}
