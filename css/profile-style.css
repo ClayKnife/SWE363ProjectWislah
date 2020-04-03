@@ -1,6 +1,5 @@
 .profile-header{
     margin-top: 8rem;
-    background-color: gray;
 }
 
 .profile-user-img{
@@ -13,8 +12,8 @@
 }
 
 .profile-selected-opt-name{
+    background-color: gray;
     font-size: 3rem;
     text-align: left;
-    padding: 100px 40px;
-
+    font-style: normal;
 }
