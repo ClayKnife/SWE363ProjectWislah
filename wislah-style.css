@@ -87,13 +87,13 @@ body{
     font-size: 1rem;
     padding-bottom: 4px;
     font-weight: 800;
-    transition: 0.1s;
+    transition: 0.15s;
 }
 .category-card:hover .category-card-title{
     color: var(--category-card-content-color);
     padding-bottom: 2px;
     border-bottom: 2px solid black;
-    transition: 0.1s;
+    transition: 0.15s;
 }
 
 .service-card{
