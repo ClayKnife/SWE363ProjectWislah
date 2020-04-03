@@ -125,6 +125,12 @@ body{
     font-size: 1.2rem;
 }
 
+.service-review-count{
+    color: #0f0f0f;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+
 .service-card-description{
     clear: both;
     float: left;
