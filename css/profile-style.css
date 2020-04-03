@@ -1,0 +1,20 @@
+.profile-header{
+    margin-top: 8rem;
+    background-color: gray;
+}
+
+.profile-user-img{
+    float: left;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    border: 8px solid gray;
+    margin-right: 0px;
+}
+
+.profile-selected-opt-name{
+    font-size: 3rem;
+    text-align: left;
+    padding: 100px 40px;
+
+}
