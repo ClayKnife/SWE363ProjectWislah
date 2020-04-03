@@ -2,6 +2,7 @@
     --brand-color: #e03616;
     --body-bg-color :#f3f3f3;
     --category-card-bg-color: #93b5c6;
+    --category-card-content-color: #0f0f0f;
     --service-card-bg-color : #ece6d2; 
     --service-card-img-seperator-color: #a3976e;
     --service-card-rating-color: #DAA520;
@@ -76,14 +77,23 @@ body{
 }
 
 .category-card-img{
+    color: var(--category-card-content-color);
     font-size: 4rem;
     margin: 5px;
 }
 
 .category-card-title{
-    border-radius:5px;
+    color: var(--category-card-content-color);
     font-size: 1rem;
+    padding-bottom: 4px;
     font-weight: 800;
+    transition: 0.1s;
+}
+.category-card:hover .category-card-title{
+    color: var(--category-card-content-color);
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+    transition: 0.1s;
 }
 
 .service-card{
