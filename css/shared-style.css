@@ -1,6 +1,7 @@
 :root{
     --body-bg-color :#f3f3f3;
     --brand-color: #e03616;
+    --active-element-color: #93b5c6;
 }
 
 body{
@@ -21,7 +22,7 @@ body{
 }
 .wislah-brand:hover{
     transition: 0.3s;
-    color: #58949c;
+    color: var(--active-element-color);
     letter-spacing: 2px;
     padding-left: 14px;
 }
