@@ -2,6 +2,9 @@
     --body-bg-color :#f3f3f3;
     --brand-color: #e03616;
     --active-element-color: #93b5c6;
+    --search-bar-bg-color: #ffffff;
+    --search-bar-border-color: #888888;
+    --search-bar-btn-seperator-color: #aaaaaa;
 }
 
 body{
@@ -55,6 +58,30 @@ body{
     margin-right: 30%;
 }
 
+.search-bar{
+    font-size: 1rem;
+    background-color: var(--search-bar-bg-color);
+    padding: 7.5px 5px 7.5px 15px;
+    border: 1px solid var(--search-bar-border-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-right-style: none;
+    margin-right: 0px;
+}
+.search-bar-btn{
+    font-size: 1rem;
+    background-color: var(--search-bar-bg-color);
+    padding: 7.5px 15px 7.5px 15px;
+    border: 1px solid var(--search-bar-border-color);
+    border-left-color: var(--search-bar-btn-seperator-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: -5px
+}
+
+.search-bar:focus, .search-bar-btn:focus{
+    outline: none;
+}
 
 /* I just want the main container to be larger than what was default in bootstrap so I increased it for container */
 @media (min-width: 1400px) {
