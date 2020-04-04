@@ -1,5 +1,6 @@
 :root{
-    --body-bg-color :#f3f1e9;
+    --body-bg-color: #f3f1e9;
+    --navbar-bg-color: rgba(255,255,255,0.97);
     --brand-color: #e03616;
     --active-element-color: #93b5c6;
     --search-bar-bg-color: #ffffff;
@@ -13,7 +14,8 @@ body{
 }
 
 #navbar{
-    transition: 0.5s;
+    transition: 0.3s;
+    background-color: var(--navbar-bg-color);
 }
 
 .wislah-brand{
