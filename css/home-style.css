@@ -1,8 +1,8 @@
 :root{
     --category-card-bg-color: #93b5c6;
     --category-card-content-color: #0f0f0f;
-    --service-card-bg-color : #ece6d2; 
-    --service-card-img-seperator-color: #a3976e;
+    --service-card-bg-color : #f3f3f3; 
+    --service-card-img-seperator-color: #afafaf;
     --service-card-rating-color: #DAA520;
     --card-shadow-color: rgba(0,0,0,0.2);
 }

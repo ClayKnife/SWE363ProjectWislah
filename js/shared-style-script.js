@@ -6,7 +6,7 @@ $(document).ready(function(){
           document.getElementById("navbar").style.backgroundColor = "";
         } else {
           document.getElementById("navbar").style.boxShadow = " 0 0px 8px 0 black";
-          document.getElementById("navbar").style.backgroundColor = " rgba(243,243,243,0.7)";
+          document.getElementById("navbar").style.backgroundColor = " rgba(242,241,235,0.97)";
         }
       }
 });

@@ -1,5 +1,5 @@
 :root{
-    --body-bg-color :#f3f3f3;
+    --body-bg-color :#f3f1e9;
     --brand-color: #e03616;
     --active-element-color: #93b5c6;
     --search-bar-bg-color: #ffffff;
@@ -17,7 +17,7 @@ body{
 }
 
 .wislah-brand{
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: var(--brand-color);
     letter-spacing: 8px; 
     font-weight: 800;
@@ -59,23 +59,24 @@ body{
 }
 
 .search-bar{
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: var(--search-bar-bg-color);
-    padding: 7.5px 5px 7.5px 15px;
-    border: 1px solid var(--search-bar-border-color);
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    padding: 5px 5px 5px 15px;
+    border: 0.5px solid var(--search-bar-border-color);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
     border-right-style: none;
     margin-right: 0px;
 }
 .search-bar-btn{
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: var(--search-bar-bg-color);
-    padding: 7.5px 15px 7.5px 15px;
-    border: 1px solid var(--search-bar-border-color);
+    color: var(--search-bar-border-color);
+    padding: 5px 15px 5px 15px;
+    border: 0.5px solid var(--search-bar-border-color);
     border-left-color: var(--search-bar-btn-seperator-color);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
     margin-left: -5px
 }
 
