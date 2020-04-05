@@ -73,11 +73,13 @@
 .profile-menu-item{
     padding: 5px 5px;
     font-size: 1.2rem;
-    transition: 0.3s
+    border-left: 2px solid var(--profile-border-color);
+    border-right: 2px solid rgba(0,0,0,0);
+    transition: 0.3s;
 }
 .profile-menu-item:not(:last-child){
     margin-bottom: 10px;
-    transition: 0.3s
+    transition: 0.3s;
 }
 .profile-menu-item:hover{
     cursor: pointer;
