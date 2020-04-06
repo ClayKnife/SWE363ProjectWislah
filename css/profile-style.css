@@ -96,6 +96,7 @@
     background-color: var(--profile-bg-color);
     border-right: 2px solid var(--profile-border-color);
     border-bottom: 2px solid var(--profile-border-color);
+    border-bottom-right-radius: 10px;
     margin-bottom: 50px;
 }
 
