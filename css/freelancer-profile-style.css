@@ -121,7 +121,7 @@
     background-color: var(--service-card-bg-color);
     border-radius: 20px;
     padding: 1rem;
-    max-width: 30rem;
+    max-width: 25rem;
 
     box-shadow: 0 4px 8px 0 var(--card-shadow-color);
     transition: 0.3s;
