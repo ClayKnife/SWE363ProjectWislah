@@ -3,7 +3,7 @@
     --sign-up-bg-color: #fff;
 
     --input-border-color: #e03616;
-    --input-bg-color: #dedede;
+    --input-bg-color: #f4f4f4;
     --input-focus-border-color: #93b5c6;
     --input-focus-bg-color: #fefefe;
 }
@@ -51,7 +51,29 @@ input{
     outline: none;
 }
 
-.radio{
+.checkable{
     width: 18px;
     height: 18px;
+}
+
+.center{
+    margin: auto;
+}
+
+.sign-up-btn{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--input-border-color);
+    color: var(--input-focus-border-color);
+    font-weight: 800;
+    font-size: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+.sign-up-btn:hover{
+    background-color: var(--input-focus-border-color);
+    color: var(--input-border-color);
+    transition: 0.2s ease-in-out;
 }
