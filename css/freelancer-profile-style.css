@@ -1,0 +1,156 @@
+:root{
+    --profile-border-color: #000000;
+    --profile-secondary-border-color: #d6d5d5;
+    --profile-bg-color: #ffffff;
+    --active-element-bg-color: #93b5c6;
+    --active-element-color: #4c9fc9;
+    
+    --service-card-bg-color : #f3f3f3; 
+    --service-card-rating-color: #DAA520;
+    --card-shadow-color: rgba(0,0,0,0.2);
+}
+
+.profile-header{
+    margin-top: 8rem;
+}
+
+.profile-service-img-holder{
+    z-index: 1;
+    border-top: 2px solid var(--profile-border-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-radius: 20px;
+}
+
+.profile-service-img{
+    z-index: 1;
+    width: 175px;
+    height: 175px;
+    border-radius: 20px;
+    border: 8px solid var(--profile-bg-color);
+    margin-right: 0px;
+}
+
+.profile-selected-opt-info{
+    z-index: 1;
+    background-color: var(--profile-bg-color);
+    border-top: 2px solid var(--profile-border-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid var(--profile-secondary-border-color);
+    margin: 17px 0px;
+    padding: 10px 20px;
+}
+
+.profile-selected-opt-title{
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.profile-selected-opt-description{
+    font-size: 1.1rem;
+}
+
+.profile-menu{
+    z-index: 1;
+    width: 140px;
+    margin-top: 0px;
+    margin-left: 17px;
+    margin-bottom: 50px;
+    background-color: var(--profile-bg-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-bottom: 2px solid var(--profile-border-color);
+    border-bottom-left-radius: 10px;
+    border-right: 2px solid var(--secondary-border-color);
+}
+
+.profile-menu-items{
+    margin: 20px 0px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.profile-menu-item{
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    border-left: 2px solid var(--profile-border-color);
+    border-right: 2px solid rgba(0,0,0,0);
+    transition: 0.3s;
+}
+.profile-menu-item:not(:last-child){
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.profile-menu-item:hover{
+    cursor: pointer;
+    background-color: var(--active-element-bg-color);
+    border-left: 5px solid var(--active-element-color);
+    border-right: 5px solid var(--active-element-color);
+    transition: 0.3s;
+}
+
+.profile-content{
+    z-index: 0;
+    margin-top: -20px;
+    margin-right: 0px;
+    background-color: var(--profile-bg-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-bottom: 2px solid var(--profile-border-color);
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.service-information{
+    margin: 50px;
+    width:80%;
+    padding: 20px 0px;
+    border-bottom: 2px solid var(--profile-secondary-border-color);
+}
+
+.service-reviews{
+    font-size: 1.5rem;
+    margin: 50px;
+    width: 80%;
+    border-top: 2px solid var(--profile-secondary-border-color);
+}
+
+.review-card{
+    overflow: hidden;
+    margin: 25px 30px;
+    margin-bottom: 30px;
+    background-color: var(--service-card-bg-color);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 30rem;
+
+    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+    transition: 0.3s;
+}
+.review-card:hover{
+    box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+}
+
+.review-card-title{
+    font-weight: 800;
+}
+
+.review-card-freelancer{
+    float: left;
+}
+
+.review-status-label{
+    color: #0f0f0f;
+    font-size: 0.8rem;
+    font-style: normal;
+}
+
+.review-rating{
+    color: var(--service-card-rating-color);
+    float: right;
+    font-size: 1.2rem;
+}
+
+.review-card-description{
+    clear: both;
+    float: left;
+}
