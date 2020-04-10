@@ -13,6 +13,16 @@ body{
     font-family: 'Sen', sans-serif;
 }
 
+a{
+    color: var(--brand-color);
+    
+}
+
+a:hover{
+    color: var(--active-element-color);
+    text-decoration: none;
+}
+
 #navbar{
     transition: 0.3s;
     background-color: var(--navbar-bg-color);
