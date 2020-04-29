@@ -21,7 +21,6 @@ function rollText() {
     index = Math.floor(Math.random() * wordlist.length)
     wordbox.text(wordlist[index])
     wordbox2.text(wordlist2[index])
-    console.log(category)
 }
 
 $(setInterval(rollText, 2000))
