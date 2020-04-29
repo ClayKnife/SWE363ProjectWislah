@@ -61,7 +61,7 @@
     border-left: 2px solid var(--profile-border-color);
     border-bottom: 2px solid var(--profile-border-color);
     border-bottom-left-radius: 10px;
-    border-right: 2px solid var(--secondary-border-color);
+    border-right: 2px solid var(--profile-secondary-border-color);
 }
 
 .profile-menu-items{
