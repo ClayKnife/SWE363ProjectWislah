@@ -1,303 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+            shrink-to-fit=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/19a3b3f623.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen:400,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/shared-style.css" />
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/services-style.css" />
+    <title>Services</title>
+  </head>
 
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
-            shrink-to-fit=no">
-        <script src="https://kit.fontawesome.com/19a3b3f623.js"
-            crossorigin="anonymous"></script>
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous">
-        <link
-            href="https://fonts.googleapis.com/css?family=Sen:400,800&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="css/shared-style.css">
-        <link rel="stylesheet" href="css/index-style.css">
-        <link rel="stylesheet" href="css/services-style.css">
-        <title>Services</title>
-    </head>
+  <body>
+    <!-- NAVBAR AND SEARCH -->
+    <header id="navbar" class="container-fluid sticky-top">
+      <nav class="navbar navbar-expand-sm pl-5 pr-5">
+        <a class="wislah-brand navbar-brand" href="index.html">WISLAH</a>
+        <button
+          class="navbar-toggler"
+          style="outline: none;"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
 
-    <body>
-        <!-- NAVBAR AND SEARCH -->
-        <header id="navbar" class="container-fluid sticky-top">
-            <nav class="navbar navbar-expand-sm pl-5 pr-5">
-                <a class="wislah-brand navbar-brand" href="index.html">WISLAH</a>
-                <button class="navbar-toggler" style="outline: none;"
-                    type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="fas fa-bars"></span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-auto pr-5 mr-5">
+              <form class="d-inline" action="" method="get">
+                <input
+                  class="search-bar"
+                  type="text"
+                  name="search-bar"
+                  id="search-bar"
+                  autocomplete="off"
+                  placeholder="Search our services..."
+                />
+                <button class="search-bar-btn">
+                  <i class="fas fa-search"></i>
                 </button>
+              </form>
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a
+                class="wislah-nav-item nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#sign-in-modal"
+                >Sign in</a
+              >
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a class="wislah-nav-item nav-link" href="#">Sign up</a>
+            </li>
+            <li class="nav-item dropdown my-auto" style="font-size: 2.5rem;">
+              <a
+                class="wislah-nav-item-icon nav-link fas fa-user-circle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="profile.html">My Profile</a>
+                <a class="dropdown-item" href="#">My Orders</a>
+                <a class="dropdown-item" href="#">Orders</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-                <div class="collapse navbar-collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item my-auto pr-5 mr-5">
-                            <form class="d-inline" action="" method="get">
-                                <input class="search-bar" type="text"
-                                    name="search-bar" id="search-bar"
-                                    autocomplete="off"
-                                    placeholder="Search our services...">
-                                <button class="search-bar-btn"><i class="fas
-                                        fa-search"></i></button>
-                            </form>
-                        </li>
-                        <li class="nav-item my-auto" style="font-size: 1.2rem;">
-                            <a class="wislah-nav-item nav-link" href="#"
-                                data-toggle="modal"
-                                data-target="#sign-in-modal">Sign in</a>
-                        </li>
-                        <li class="nav-item my-auto" style="font-size: 1.2rem;">
-                            <a class="wislah-nav-item nav-link" href="#">Sign up</a>
-                        </li>
-                        <li class="nav-item dropdown my-auto" style="font-size:
-                            2.5rem;">
-                            <a class="wislah-nav-item-icon nav-link fas
-                                fa-user-circle" href="#"
-                                id="navbarDropdownMenuLink"
-                                role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"></a>
-                            <div class="dropdown-menu dropdown-menu-right"
-                                aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="profile.html">My
-                                    Profile</a>
-                                <a class="dropdown-item" href="#">My Orders</a>
-                                <a class="dropdown-item" href="#">Orders</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <div class="container mt-3 pl-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: transparent;">
+          <li class="breadcrumb-item"><a href="#">Technology</a></li>
+          <li class="breadcrumb-item"><a href="#">Programming</a></li>
+          <li class="breadcrumb-item active" aria-current="page">website</li>
+        </ol>
+      </nav>
+    </div>
 
-        <div class="container mt-3 pl-3">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb" style="background-color: transparent;">
-                    <li class="breadcrumb-item"><a href="#">Technology</a></li>
-                    <li class="breadcrumb-item"><a href="#">Programming</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">website</li>
-                </ol>
-            </nav>
+    <div class="container pl-4">
+      <h4 class="ml-2">Filter</h4>
+    </div>
 
+    <!-- fliters container -->
+    <div
+      class="container mt-3 pl-4 d-none d-sm-none d-md-flex flex-nowrap flex-stretch-0"
+    >
+      <!-- deivery date -->
+      <div class="dropdown ml-2">
+        <button
+          type="button"
+          class="btn btn-light dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Delivery Date
+        </button>
+        <div id="d-date" class="dropdown-menu">
+          <a class="dropdown-item" href="#">3-5 Days</a>
+          <a class="dropdown-item" href="#">1 Week</a>
+          <a class="dropdown-item" href="#">2 Weeks</a>
+        </div>
+      </div>
+      <!-- price range -->
+      <div class="d-flex ml-4">
+        <h5>Price Range</h5>
+        <label class="sr-only" for="inlineFormInputGroupUsername2">min</label>
+        <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="inlineFormInputGroupUsername2"
+            placeholder="Min"
+          />
         </div>
 
-
-
-        <div class="container pl-4">
-            <h4 class="ml-2">Filter</h4>
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Max</label>
+        <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+          <div class="input-group-prepend">
+            <div class="input-group-text">$</div>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            id="inlineFormInputGroupUsername2"
+            placeholder="Max"
+          />
         </div>
+      </div>
+      <button
+        type="button"
+        class="btn btn-dark"
+        style="max-height: 38px; background-color: #0e1d32;"
+      >
+        Apply
+      </button>
+    </div>
 
-        <!-- fliters container -->
-        <div class="container mt-3 pl-4 d-none d-sm-none d-md-flex flex-nowrap
-            flex-stretch-0">
-            <!-- deivery date -->
-            <div class="dropdown ml-2">
-                <button type="button" class="btn btn-light dropdown-toggle"
-                    data-toggle="dropdown">
-                    Delivery Date
-                </button>
-                <div id="d-date" class="dropdown-menu">
-                    <a class="dropdown-item" href="#">3-5 Days</a>
-                    <a class="dropdown-item" href="#">1 Week</a>
-                    <a class="dropdown-item" href="#">2 Weeks</a>
-                </div>
-            </div>
-            <!-- price range -->
-            <div class="d-flex ml-4">
-                <h5>Price Range</h5>
-                <label class="sr-only" for="inlineFormInputGroupUsername2">min</label>
-                <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">$</div>
-                    </div>
-                    <input type="text" class="form-control"
-                        id="inlineFormInputGroupUsername2" placeholder="Min">
-                </div>
-
-                <label class="sr-only" for="inlineFormInputGroupUsername2">Max</label>
-                <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">$</div>
-                    </div>
-                    <input type="text" class="form-control"
-                        id="inlineFormInputGroupUsername2" placeholder="Max">
-                </div>
-            </div>
-            <button type="button" class="btn btn-dark" style="max-height: 38px;
-                background-color: #0e1d32;">Apply</button>
+    <!-- services container -->
+    <div class="container justify-content-start mt-3 d-flex flex-wrap">
+      <div
+        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
+        style="width: 17rem;"
+      >
+        <img src="images/test.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h6 class="card-title freelancer">Khalid Shabloota</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="rating-container">
+            <i class="fas fa-star"></i>
+            <span class="rating">4.5</span>
+          </div>
         </div>
-
-        <!-- services container -->
-        <div class="container justify-content-start mt-3 d-flex flex-wrap">
-            <div class="card flex-grow-1 ml-md-3 flex-lg-grow-0" style="width:
-                17rem;">
-                <img src="images/test.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title freelancer">Khalid Shabloota</h5>
-                    <p class="card-text">Some quick example text to build on the
-                        card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="rating-container">
-                        <i class="fas fa-star"></i>
-                        <span class="rating">4.5</span>
-                    </div>
-                </div>
-                <div class="actions-container">
-                    <i class="far fa-heart"></i>
-                    <span class="like-count">1.2k</span> </div>
-            </div>
-            <div class="card flex-grow-1 ml-md-3 flex-lg-grow-0" style="width:
-                17rem;">
-                <img src="images/test.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title freelancer">Khalid Shabloota</h5>
-                    <p class="card-text">Some quick example text to build on the
-                        card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="rating-container">
-                        <i class="fas fa-star"></i>
-                        <span class="rating">4.5</span>
-                        <span class="rating-count">(1.2k)</span>
-                    </div>
-                </div>
-                <div class="actions-container">
-                    <i class="far fa-heart"></i>
-                    <span class="like-count">1.2k</span>
-                </div>
-            </div>
-            <div class="card flex-grow-1 ml-md-3 flex-lg-grow-0" style="width:
-                17rem;">
-                <img src="images/test.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title freelancer">Khalid Shabloota</h5>
-                    <p class="card-text">Some quick example text to build on the
-                        card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="rating-container">
-                        <i class="fas fa-star"></i>
-                        <span class="rating">4.5</span>
-                        <span class="rating-count">(1.2k)</span>
-                    </div>
-                </div>
-                <div class="actions-container">
-                    <i class="far fa-heart"></i>
-                    <span class="like-count">1.2k</span> </div>
-            </div>
-            <div class="card flex-grow-1 ml-md-3 flex-lg-grow-0" style="width:
-                17rem;">
-                <img src="images/test.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title freelancer">Khalid Shabloota</h5>
-                    <p class="card-text">Some quick example text to build on the
-                        card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="rating-container">
-                        <i class="fas fa-star"></i>
-                        <span class="rating">4.5</span>
-                        <span class="rating-count">(1.2k)</span>
-                    </div>
-                </div>
-                <div class="actions-container">
-                    <i class="far fa-heart"></i>
-                    <span class="like-count">1.2k</span> </div>
-            </div>
-            <div class="card flex-grow-1 ml-md-3 flex-lg-grow-0" style="width:
-                17rem;">
-                <img src="images/test.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title freelancer">Khalid Shabloota</h5>
-                    <p class="card-text">Some quick example text to build on the
-                        card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="rating-container">
-                        <i class="fas fa-star"></i>
-                        <span class="rating">4.5</span>
-                        <span class="rating-count">(1.2k)</span>
-                    </div>
-                </div>
-                <div class="actions-container">
-                    <i class="far fa-heart"></i>
-                    <span class="like-count">1.2k</span> </div>
-            </div>
-            <div class="card flex-grow-1 ml-md-3 flex-lg-grow-0" style="width:
-                17rem;">
-                <img src="images/test.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="card-title freelancer">Khalid Shabloota</h5>
-                    <p class="card-text">Some quick example text to build on the
-                        card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="rating-container">
-                        <i class="fas fa-star"></i>
-                        <span class="rating">4.5</span>
-                        <span class="rating-count">(1.2k)</span>
-                    </div>
-                </div>
-                <div class="actions-container">
-                    <i class="far fa-heart"></i>
-                    <span class="like-count">1.2k</span> </div>
-            </div>
+        <div class="actions-container">
+          <i class="far fa-heart"></i>
+          <span class="like-count">1.2k</span>
         </div>
+      </div>
+      <div
+        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
+        style="width: 17rem;"
+      >
+        <img src="images/test.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h6 class="card-title freelancer">Khalid Shabloota</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="rating-container">
+            <i class="fas fa-star"></i>
+            <span class="rating">4.5</span>
+            <span class="rating-count">(1.2k)</span>
+          </div>
+        </div>
+        <div class="actions-container">
+          <i class="far fa-heart"></i>
+          <span class="like-count">1.2k</span>
+        </div>
+      </div>
+      <div
+        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
+        style="width: 17rem;"
+      >
+        <img src="images/test.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h6 class="card-title freelancer">Khalid Shabloota</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="rating-container">
+            <i class="fas fa-star"></i>
+            <span class="rating">4.5</span>
+            <span class="rating-count">(1.2k)</span>
+          </div>
+        </div>
+        <div class="actions-container">
+          <i class="far fa-heart"></i>
+          <span class="like-count">1.2k</span>
+        </div>
+      </div>
+      <div
+        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
+        style="width: 17rem;"
+      >
+        <img src="images/test.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h6 class="card-title freelancer">Khalid Shabloota</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="rating-container">
+            <i class="fas fa-star"></i>
+            <span class="rating">4.5</span>
+            <span class="rating-count">(1.2k)</span>
+          </div>
+        </div>
+        <div class="actions-container">
+          <i class="far fa-heart"></i>
+          <span class="like-count">1.2k</span>
+        </div>
+      </div>
+      <div
+        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
+        style="width: 17rem;"
+      >
+        <img src="images/test.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h6 class="card-title freelancer">Khalid Shabloota</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="rating-container">
+            <i class="fas fa-star"></i>
+            <span class="rating">4.5</span>
+            <span class="rating-count">(1.2k)</span>
+          </div>
+        </div>
+        <div class="actions-container">
+          <i class="far fa-heart"></i>
+          <span class="like-count">1.2k</span>
+        </div>
+      </div>
+      <div
+        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
+        style="width: 17rem;"
+      >
+        <img src="images/test.png" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h6 class="card-title freelancer">Khalid Shabloota</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <div class="rating-container">
+            <i class="fas fa-star"></i>
+            <span class="rating">4.5</span>
+            <span class="rating-count">(1.2k)</span>
+          </div>
+        </div>
+        <div class="actions-container">
+          <i class="far fa-heart"></i>
+          <span class="like-count">1.2k</span>
+        </div>
+      </div>
+    </div>
 
-        <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row">
-                    <div class="col-md-6 mt-md-0 mt-3">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Interested in seeing more?</h5>
+            <p>
+              You can communicate with us directy through the following links.
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Socials</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Twitter</a>
+              </li>
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+              <li>
+                <a href="#!">linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Help Center</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">FAQ</a>
+              </li>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-                        <h5 class="text-uppercase">Interested in seeing more?</h5>
-                        <p>You can communicate with us directy through the following links.</p>
-
-                    </div>
-                    <hr class="clearfix w-100 d-md-none pb-3">
-                    <div class="col-md-3 mb-md-0 mb-3">
-                        <h5 class="text-uppercase">Socials</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Twitter</a>
-                            </li>
-                            <li>
-                                <a href="#!">Facebook</a>
-                            </li>
-                            <li>
-                                <a href="#!">linkedin</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 mb-md-0 mb-3">
-                        <h5 class="text-uppercase">Help Center</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#!">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Javascript files -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-        <script src="js/shared-style-script.js"></script>
-        <script src="js/services-script.js"></script>
-    </body>
-
+    <!-- Javascript files -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/shared-style-script.js"></script>
+    <script src="js/services-script.js"></script>
+  </body>
 </html>

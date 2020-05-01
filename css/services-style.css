@@ -1,69 +1,69 @@
-:root{
-    --category-card-bg-color: #93b5c6;
-    --category-card-content-color: #0f0f0f;
-    --service-card-bg-color : #f3f3f3; 
-    --service-card-img-seperator-color: #afafaf;
-    --service-card-rating-color: #DAA520;
-    --card-shadow-color: rgba(0,0,0,0.2);
+:root {
+  --category-card-bg-color: #93b5c6;
+  --category-card-content-color: #0f0f0f;
+  --service-card-bg-color: #f3f3f3;
+  --service-card-img-seperator-color: #afafaf;
+  --service-card-rating-color: #daa520;
+  --card-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 /* new styles @author Ryan */
 
-
 /* bootstrap cards */
-.card{
-    margin: 6px 0;
-    box-shadow: 0 4px 8px 1px var(--card-shadow-color);
-
+.card {
+  margin: 6px 0;
+  box-shadow: 0 4px 8px 1px var(--card-shadow-color);
 }
 
-.freelancer{
-    color: var(--brand-color);
+.freelancer {
+  color: var(--brand-color);
 }
 
-.actions-container{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-    padding:12px 20px;
-    box-shadow: inset 0px 0px 5px 1px var(--card-shadow-color);
-    background-color: var(--category-card-bg-color);
+.actions-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 12px 20px;
+  box-shadow: inset 0px 0px 5px 1px var(--card-shadow-color);
+  background-color: var(--category-card-bg-color);
 }
 
-.like-count{
-    margin-left: 6px;
+.like-count {
+  margin-left: 6px;
 }
 
-.rating-container{
-    color: darkorange;
+.rating-container {
+  color: darkorange;
 }
 
-.rating-count{
-    color: grey;
+.rating-count {
+  color: grey;
 }
-.card i, .card img {
-    cursor: pointer;
+.card i,
+.card img {
+  cursor: pointer;
 }
 .actions-container i:hover {
-    color: var(--brand-color);
+  color: var(--brand-color);
 }
 
-.card-img-top{
-    object-fit: cover;
-    height: 190px;
-    width: 100%;
+.card-img-top {
+  object-fit: cover;
+  height: 190px;
+  width: 100%;
 }
 
-.wislah-active, .dropdown-item:active{
-    background-color: var(--brand-color);
-    color: #fff;
+.wislah-active,
+.dropdown-item:active {
+  background-color: var(--brand-color);
+  color: #fff;
 }
-.dropdown-item:hover{
-    background-color: var(--category-card-bg-color);
+.dropdown-item:hover {
+  background-color: var(--category-card-bg-color);
 }
 
-.dropdown button{
-    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
-    background-color: #fff !important;
+.dropdown button {
+  box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+  background-color: #fff !important;
 }

@@ -29,133 +29,221 @@
     <!-- NAVBAR AND SEARCH -->
     <header id="navbar" class="container-fluid sticky-top">
       <nav class="navbar navbar-expand-sm pl-5 pr-5">
-          <a class="wislah-brand navbar-brand" href="index.html">WISLAH</a>
-  
-          <button class="navbar-toggler" style="outline: none;" type="button" data-toggle="collapse"
-              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="fas fa-bars"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item my-auto pr-5 mr-5">
-                      <form class="d-inline" action="" method="get">
-                          <input class="search-bar" type="text" name="search-bar" id="search-bar" autocomplete="off" placeholder="Search our services...">
-                          <button class="search-bar-btn"><i class="fas fa-search"></i></button>
-                      </form>
-                  </li>
-                  <li class="nav-item my-auto" style="font-size: 1.2rem;">
-                      <a class="wislah-nav-item nav-link" href="#" data-toggle="modal" data-target="#sign-in-modal">Sign-in</a>
-                  </li>
-                  <li class="nav-item my-auto" style="font-size: 1.2rem;">
-                      <a class="wislah-nav-item nav-link" href="sign-up.html">Sign-up</a>
-                  </li>
-                  <li class="nav-item dropdown my-auto" style="font-size: 2.5rem;">
-                      <a class="wislah-nav-item-icon nav-link fas fa-user-circle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="profile.html">My Profile</a>
-                        <a class="dropdown-item" href="#">My Orders</a>
-                        <a class="dropdown-item" href="#">His Orders</a>
-                      </div>
-                  </li>
-              </ul>
-          </div>
+        <a class="wislah-brand navbar-brand" href="index.html">WISLAH</a>
+
+        <button
+          class="navbar-toggler"
+          style="outline: none;"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-auto pr-5 mr-5">
+              <form class="d-inline" action="" method="get">
+                <input
+                  class="search-bar"
+                  type="text"
+                  name="search-bar"
+                  id="search-bar"
+                  autocomplete="off"
+                  placeholder="Search our services..."
+                />
+                <button class="search-bar-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a
+                class="wislah-nav-item nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#sign-in-modal"
+                >Sign-in</a
+              >
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a class="wislah-nav-item nav-link" href="sign-up.html"
+                >Sign-up</a
+              >
+            </li>
+            <li class="nav-item dropdown my-auto" style="font-size: 2.5rem;">
+              <a
+                class="wislah-nav-item-icon nav-link fas fa-user-circle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="profile.html">My Profile</a>
+                <a class="dropdown-item" href="#">My Orders</a>
+                <a class="dropdown-item" href="#">His Orders</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
     <div class="container-sm sign-up-holder">
-        <h2 class="display-5 text-center">Sign up as a customer</h2>
-        <br><br>
-        <form action="" method="post">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <label class="sign-up-label" for="name">Name <br>
-                        <input class="sign-up-input" type="text" name="name" id="name" placeholder="Your Name">
-                    </label>
-                    <br>
-                    <label class="sign-up-label" for="email">Email <br>
-                        <input class="sign-up-input" type="email" name="email" id="email" placeholder="example@domain.com">
-                    </label>
-                    <br>
-                    <label class="sign-up-label" for="email2">
-                        <input class="sign-up-input" type="email" name="email2" id="email2" placeholder="confirm email">
-                    </label>
-                    <br>
-                    <label class="sign-up-label" for="pwd">Password <br>
-                        <input class="sign-up-input" type="password" name="pwd" id="pwd" placeholder="enter your password">
-                    </label>
-                    <br>
-                    <label class="sign-up-label" for="pwd2">
-                        <input class="sign-up-input" type="password" name="pwd2" id="pwd2" placeholder="confirm password">
-                    </label>
-                    <br><br>
-                </div>
-                <div class="col-12 col-md-6">
-                    <label class="sign-up-label" for="gender">Gender <br>
-                        <input class="checkable" type="radio" name="gender" id="m"> male
-                        <input class="checkable" type="radio" name="gender" id="f"> female
-                        <input class="checkable" type="radio" name="gender" id="o"> other
-                    </label>
-                    <br><br>
-                    <label class="sign-up-label" for="birthdate">Birthdate <br>
-                        <input class="sign-up-input" type="date" name="birthdate" id="birthdate">
-                    </label>
-                    <br><br>
-                    <label class="sign-up-label" for="phonenum">Phone number <br>
-                        <input class="sign-up-input" type="tel" name="phonenum" id="phonenum">
-                    </label>
-                    <br><br>
-                </div>
-                <div class="center">
-                    <input class="checkable" type="checkbox" name="freelancer-check" id="freelancer-check" value="t"> 
-                    <span>Become a Freelancer as well!</span> 
-                </div>
-                <br><br>
-                <button class="sign-up-btn">SUBMIT</button>
-            </div>
-        </form>
-
+      <h2 class="display-5 text-center">Sign up as a customer</h2>
+      <br /><br />
+      <form action="" method="post">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <label class="sign-up-label" for="name"
+              >Name <br />
+              <input
+                class="sign-up-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name"
+              />
+            </label>
+            <br />
+            <label class="sign-up-label" for="email"
+              >Email <br />
+              <input
+                class="sign-up-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@domain.com"
+              />
+            </label>
+            <br />
+            <label class="sign-up-label" for="email2">
+              <input
+                class="sign-up-input"
+                type="email"
+                name="email2"
+                id="email2"
+                placeholder="confirm email"
+              />
+            </label>
+            <br />
+            <label class="sign-up-label" for="pwd"
+              >Password <br />
+              <input
+                class="sign-up-input"
+                type="password"
+                name="pwd"
+                id="pwd"
+                placeholder="enter your password"
+              />
+            </label>
+            <br />
+            <label class="sign-up-label" for="pwd2">
+              <input
+                class="sign-up-input"
+                type="password"
+                name="pwd2"
+                id="pwd2"
+                placeholder="confirm password"
+              />
+            </label>
+            <br /><br />
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="sign-up-label" for="gender"
+              >Gender <br />
+              <input class="checkable" type="radio" name="gender" id="m" /> male
+              <input class="checkable" type="radio" name="gender" id="f" />
+              female
+              <input class="checkable" type="radio" name="gender" id="o" />
+              other
+            </label>
+            <br /><br />
+            <label class="sign-up-label" for="birthdate"
+              >Birthdate <br />
+              <input
+                class="sign-up-input"
+                type="date"
+                name="birthdate"
+                id="birthdate"
+              />
+            </label>
+            <br /><br />
+            <label class="sign-up-label" for="phonenum"
+              >Phone number <br />
+              <input
+                class="sign-up-input"
+                type="tel"
+                name="phonenum"
+                id="phonenum"
+              />
+            </label>
+            <br /><br />
+          </div>
+          <div class="center">
+            <input
+              class="checkable"
+              type="checkbox"
+              name="freelancer-check"
+              id="freelancer-check"
+              value="t"
+            />
+            <span>Become a Freelancer as well!</span>
+          </div>
+          <br /><br />
+          <button class="sign-up-btn">SUBMIT</button>
+        </div>
+      </form>
     </div>
 
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                    <h5 class="text-uppercase">Interested in seeing more?</h5>
-                    <p>You can communicate with us directy through the following links.</p>
-
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase">Socials</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="#!">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="#!">linkedin</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <h5 class="text-uppercase">Help Center</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#!">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Interested in seeing more?</h5>
+            <p>
+              You can communicate with us directy through the following links.
+            </p>
+          </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Socials</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Twitter</a>
+              </li>
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+              <li>
+                <a href="#!">linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Help Center</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">FAQ</a>
+              </li>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Javascript files -->

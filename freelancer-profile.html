@@ -29,38 +29,73 @@
     <!-- NAVBAR AND SEARCH -->
     <header id="navbar" class="container-fluid sticky-top">
       <nav class="navbar navbar-expand-sm pl-5 pr-5">
-          <a class="wislah-brand navbar-brand" href="index.html">WISLAH</a>
-  
-          <button class="navbar-toggler" style="outline: none;" type="button" data-toggle="collapse"
-              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="fas fa-bars"></span>
-          </button>
-  
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item my-auto pr-5 mr-5">
-                      <form class="d-inline" action="" method="get">
-                          <input class="search-bar" type="text" name="search-bar" id="search-bar" autocomplete="off" placeholder="Search our services...">
-                          <button class="search-bar-btn"><i class="fas fa-search"></i></button>
-                      </form>
-                  </li>
-                  <li class="nav-item my-auto" style="font-size: 1.2rem;">
-                      <a class="wislah-nav-item nav-link" href="#" data-toggle="modal" data-target="#sign-in-modal">Sign-in</a>
-                  </li>
-                  <li class="nav-item my-auto" style="font-size: 1.2rem;">
-                      <a class="wislah-nav-item nav-link" href="sign-up.html">Sign-up</a>
-                  </li>
-                  <li class="nav-item dropdown my-auto" style="font-size: 2.5rem;">
-                      <a class="wislah-nav-item-icon nav-link fas fa-user-circle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="profile.html">My Profile</a>
-                        <a class="dropdown-item" href="#">My Orders</a>
-                        <a class="dropdown-item" href="#">His Orders</a>
-                      </div>
-                  </li>
-              </ul>
-          </div>
+        <a class="wislah-brand navbar-brand" href="index.html">WISLAH</a>
+
+        <button
+          class="navbar-toggler"
+          style="outline: none;"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-auto pr-5 mr-5">
+              <form class="d-inline" action="" method="get">
+                <input
+                  class="search-bar"
+                  type="text"
+                  name="search-bar"
+                  id="search-bar"
+                  autocomplete="off"
+                  placeholder="Search our services..."
+                />
+                <button class="search-bar-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a
+                class="wislah-nav-item nav-link"
+                href="#"
+                data-toggle="modal"
+                data-target="#sign-in-modal"
+                >Sign-in</a
+              >
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a class="wislah-nav-item nav-link" href="sign-up.html"
+                >Sign-up</a
+              >
+            </li>
+            <li class="nav-item dropdown my-auto" style="font-size: 2.5rem;">
+              <a
+                class="wislah-nav-item-icon nav-link fas fa-user-circle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="profile.html">My Profile</a>
+                <a class="dropdown-item" href="#">My Orders</a>
+                <a class="dropdown-item" href="#">His Orders</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -78,14 +113,17 @@
           </div>
           <div class="profile-selected-opt-info flex-grow-1">
             <i class="profile-selected-opt-title">Service 1</i>
-            <p class="profile-selected-opt-description">This is info describing the selected service from the menu below the image.</p>
+            <p class="profile-selected-opt-description">
+              This is info describing the selected service from the menu below
+              the image.
+            </p>
           </div>
         </div>
       </div>
       <!-- PROFILE MENU (BELOW IMAGE) AND CONTENT OF SELECTED OPTION -->
       <div class="d-flex align-items-stretch d-none d-md-block container">
         <div class="row">
-            <!-- MENU -->
+          <!-- MENU -->
           <div class="profile-menu">
             <ul class="profile-menu-items text-center">
               <li class="profile-menu-item">Service 1</li>
@@ -96,86 +134,137 @@
           </div>
           <!-- CONTENT -->
           <div class="profile-content col row justify-content-center">
-              <div class="service-information">
-                  <ul class="nav nav-tabs flex-column flex-sm-row" id="myTab" role="tablist">
-                      <li class="nav-item">
-                          <a class="flex-sm-fill text-sm-center nav-link active" id="package-1-tab" data-toggle="tab" href="#package-1" role="tab" aria-controls="package-1" aria-selected="true">Package 1</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="flex-sm-fill text-sm-center nav-link" id="package-2-tab" data-toggle="tab" href="#package-2" role="tab" aria-controls="package-2" aria-selected="false">Package 2</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="flex-sm-fill text-sm-center nav-link" id="package-3-tab" data-toggle="tab" href="#package-3" role="tab" aria-controls="package-3" aria-selected="false">Package 3</a>
-                      </li>
+            <div class="service-information">
+              <ul
+                class="nav nav-tabs flex-column flex-sm-row"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="flex-sm-fill text-sm-center nav-link active"
+                    id="package-1-tab"
+                    data-toggle="tab"
+                    href="#package-1"
+                    role="tab"
+                    aria-controls="package-1"
+                    aria-selected="true"
+                    >Package 1</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="flex-sm-fill text-sm-center nav-link"
+                    id="package-2-tab"
+                    data-toggle="tab"
+                    href="#package-2"
+                    role="tab"
+                    aria-controls="package-2"
+                    aria-selected="false"
+                    >Package 2</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="flex-sm-fill text-sm-center nav-link"
+                    id="package-3-tab"
+                    data-toggle="tab"
+                    href="#package-3"
+                    role="tab"
+                    aria-controls="package-3"
+                    aria-selected="false"
+                    >Package 3</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="package-tabs">
+                <div
+                  class="tab-pane fade show active"
+                  id="package-1"
+                  role="tabpanel"
+                  aria-labelledby="package-1-tab"
+                >
+                  <ul>
+                    <li>it has this</li>
+                    <li>it has that</li>
+                    <li>maybe this as well</li>
                   </ul>
-                  <div class="tab-content" id="package-tabs">
-                      <div class="tab-pane fade show active" id="package-1" role="tabpanel" aria-labelledby="package-1-tab">
-                          <ul>
-                              <li>it has this</li>
-                              <li>it has that</li>
-                              <li>maybe this as well</li>
-                          </ul>
-                          <button class="btn btn-primary">Order this Package</button>
-                      </div>
-                      <div class="tab-pane fade" id="package-2" role="tabpanel" aria-labelledby="package-2-tab">
-                          <ul>
-                              <li>it has this</li>
-                              <li>it has that</li>
-                              <li>maybe this as well</li>
-                          </ul>
-                          <button class="btn btn-primary">Order this Package</button>
-                      </div>
-                      <div class="tab-pane fade" id="package-3" role="tabpanel" aria-labelledby="package-3-tab">
-                          <ul>
-                              <li>it has this</li>
-                              <li>it has that</li>
-                              <li>maybe this as well</li>
-                          </ul>
-                          <button class="btn btn-primary">Order this Package</button>
-                      </div>
-                  </div>
+                  <button class="btn btn-primary">Order this Package</button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="package-2"
+                  role="tabpanel"
+                  aria-labelledby="package-2-tab"
+                >
+                  <ul>
+                    <li>it has this</li>
+                    <li>it has that</li>
+                    <li>maybe this as well</li>
+                  </ul>
+                  <button class="btn btn-primary">Order this Package</button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="package-3"
+                  role="tabpanel"
+                  aria-labelledby="package-3-tab"
+                >
+                  <ul>
+                    <li>it has this</li>
+                    <li>it has that</li>
+                    <li>maybe this as well</li>
+                  </ul>
+                  <button class="btn btn-primary">Order this Package</button>
+                </div>
               </div>
+            </div>
 
-              
-              <h2 style="margin-bottom: -50px;">Freelancer service reviews</h2>
-              <div class="service-reviews row justify-content-center">
-                  <div class="review-card">
-                      <h4 class="review-card-title text-center">He is great!</h4>
-                      <p class="review-card-freelancer">customer 1</p>
-                      <p class="review-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <p class="review-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                      </p>
-                  </div>
-                  <div class="review-card">
-                      <h4 class="review-card-title text-center">He is great!</h4>
-                      <p class="review-card-freelancer">customer 1</p>
-                      <p class="review-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <p class="review-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                      </p>
-                  </div>
-                  <div class="review-card">
-                      <h4 class="review-card-title text-center">He is great!</h4>
-                      <p class="review-card-freelancer">customer 1</p>
-                      <p class="review-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <p class="review-rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="far fa-star"></i>
-                      </p>
-                  </div>
+            <h2 style="margin-bottom: -50px;">Freelancer service reviews</h2>
+            <div class="service-reviews row justify-content-center">
+              <div class="review-card">
+                <h4 class="review-card-title text-center">He is great!</h4>
+                <p class="review-card-freelancer">customer 1</p>
+                <p class="review-card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
               </div>
+              <div class="review-card">
+                <h4 class="review-card-title text-center">He is great!</h4>
+                <p class="review-card-freelancer">customer 1</p>
+                <p class="review-card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+              <div class="review-card">
+                <h4 class="review-card-title text-center">He is great!</h4>
+                <p class="review-card-freelancer">customer 1</p>
+                <p class="review-card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -184,40 +273,40 @@
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
       <div class="container-fluid text-center text-md-left">
-          <div class="row">
-              <div class="col-md-6 mt-md-0 mt-3">
-
-                  <h5 class="text-uppercase">Interested in seeing more?</h5>
-                  <p>You can communicate with us directy through the following links.</p>
-
-              </div>
-              <hr class="clearfix w-100 d-md-none pb-3">
-              <div class="col-md-3 mb-md-0 mb-3">
-                  <h5 class="text-uppercase">Socials</h5>
-                  <ul class="list-unstyled">
-                      <li>
-                          <a href="#!">Twitter</a>
-                      </li>
-                      <li>
-                          <a href="#!">Facebook</a>
-                      </li>
-                      <li>
-                          <a href="#!">linkedin</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="col-md-3 mb-md-0 mb-3">
-                  <h5 class="text-uppercase">Help Center</h5>
-                  <ul class="list-unstyled">
-                      <li>
-                          <a href="#!">FAQ</a>
-                      </li>
-                      <li>
-                          <a href="#!">Contact Us</a>
-                      </li>
-                  </ul>
-              </div>
+        <div class="row">
+          <div class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Interested in seeing more?</h5>
+            <p>
+              You can communicate with us directy through the following links.
+            </p>
           </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Socials</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Twitter</a>
+              </li>
+              <li>
+                <a href="#!">Facebook</a>
+              </li>
+              <li>
+                <a href="#!">linkedin</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Help Center</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">FAQ</a>
+              </li>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
 

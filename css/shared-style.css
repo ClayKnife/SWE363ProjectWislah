@@ -1,109 +1,109 @@
-:root{
-    --body-bg-color: #f3f1e9;
-    --navbar-bg-color: rgba(255,255,255,0.97);
-    --brand-color: #e03616;
-    --active-element-color: #93b5c6;
-    --search-bar-bg-color: #ffffff;
-    --search-bar-border-color: #888888;
-    --search-bar-btn-seperator-color: #aaaaaa;
+:root {
+  --body-bg-color: #f3f1e9;
+  --navbar-bg-color: rgba(255, 255, 255, 0.97);
+  --brand-color: #e03616;
+  --active-element-color: #93b5c6;
+  --search-bar-bg-color: #ffffff;
+  --search-bar-border-color: #888888;
+  --search-bar-btn-seperator-color: #aaaaaa;
 }
 
-body{
-    background-color: var(--body-bg-color);
-    font-family: 'Sen', sans-serif;
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Sen", sans-serif;
 }
 
-a{
-    color: var(--brand-color);
-    
+a {
+  color: var(--brand-color);
 }
 
-a:hover{
-    color: var(--active-element-color);
-    text-decoration: none;
+a:hover {
+  color: var(--active-element-color);
+  text-decoration: none;
 }
 
-#navbar{
-    transition: 0.3s;
-    background-color: var(--navbar-bg-color);
+#navbar {
+  transition: 0.3s;
+  background-color: var(--navbar-bg-color);
 }
 
-.wislah-brand{
-    font-size: 2.2rem;
-    color: var(--brand-color);
-    letter-spacing: 8px; 
-    font-weight: 800;
-    transition: 0.3s;
+.wislah-brand {
+  font-size: 2.2rem;
+  color: var(--brand-color);
+  letter-spacing: 8px;
+  font-weight: 800;
+  transition: 0.3s;
 }
-.wislah-brand:hover{
-    transition: 0.3s;
-    color: var(--active-element-color);
-    letter-spacing: 2px;
-    padding-left: 14px;
-}
-
-.wislah-nav-item{
-    color: var(--brand-color);
-    transition: 0.3s;
-}
-.wislah-nav-item:hover{
-    color: var(--brand-color);
-    background-color: #dddddd;
-    border-left: 2px solid var(--brand-color);
-    border-right: 2px solid var(--brand-color);
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.wislah-nav-item-icon{
-    color: var(--brand-color);
-    transition: 0.3s;
-}
-.wislah-nav-item-icon:hover{
-    color: rgb(255, 5, 5);
-    background-color: #dddddd;
-    border-radius: 5px;
-    transition: 0.3s;
+.wislah-brand:hover {
+  transition: 0.3s;
+  color: var(--active-element-color);
+  letter-spacing: 2px;
+  padding-left: 14px;
 }
 
-.wislah-sign-in-from{
-    float: right;
-    margin-right: 30%;
+.wislah-nav-item {
+  color: var(--brand-color);
+  transition: 0.3s;
+}
+.wislah-nav-item:hover {
+  color: var(--brand-color);
+  background-color: #dddddd;
+  border-left: 2px solid var(--brand-color);
+  border-right: 2px solid var(--brand-color);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.wislah-nav-item-icon {
+  color: var(--brand-color);
+  transition: 0.3s;
+}
+.wislah-nav-item-icon:hover {
+  color: rgb(255, 5, 5);
+  background-color: #dddddd;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.search-bar{
-    font-size: 0.8rem;
-    background-color: var(--search-bar-bg-color);
-    padding: 5px 5px 5px 15px;
-    border: 0.5px solid var(--search-bar-border-color);
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
-    border-right-style: none;
-    margin-right: 0px;
-}
-.search-bar-btn{
-    font-size: 0.8rem;
-    background-color: var(--search-bar-bg-color);
-    color: var(--search-bar-border-color);
-    padding: 5px 15px 5px 15px;
-    border: 0.5px solid var(--search-bar-border-color);
-    border-left-color: var(--search-bar-btn-seperator-color);
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    margin-left: -5px
+.wislah-sign-in-from {
+  float: right;
+  margin-right: 30%;
 }
 
-.search-bar:focus, .search-bar-btn:focus{
-    outline: none;
+.search-bar {
+  font-size: 0.8rem;
+  background-color: var(--search-bar-bg-color);
+  padding: 5px 5px 5px 15px;
+  border: 0.5px solid var(--search-bar-border-color);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-right-style: none;
+  margin-right: 0px;
+}
+.search-bar-btn {
+  font-size: 0.8rem;
+  background-color: var(--search-bar-bg-color);
+  color: var(--search-bar-border-color);
+  padding: 5px 15px 5px 15px;
+  border: 0.5px solid var(--search-bar-border-color);
+  border-left-color: var(--search-bar-btn-seperator-color);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-left: -5px;
+}
+
+.search-bar:focus,
+.search-bar-btn:focus {
+  outline: none;
 }
 
 /* I just want the main container to be larger than what was default in bootstrap so I increased it for container */
 @media (min-width: 1400px) {
-    .container{
-        max-width: 1340px;
-    }
+  .container {
+    max-width: 1340px;
+  }
 }
 @media (min-width: 1600px) {
-    .container{
-        max-width: 1540px;
-    }
+  .container {
+    max-width: 1540px;
+  }
 }
