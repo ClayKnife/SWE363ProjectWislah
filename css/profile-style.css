@@ -100,6 +100,82 @@
   margin-bottom: 50px;
 }
 
+/* sp stands for small profile */
+.profile-img-holder-sp {
+    background-color: var(--profile-bg-color);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -2px;
+    z-index: 1;
+    border-top: 2px solid var(--profile-border-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.profile-selected-opt-info-sp {
+    background-color: var(--profile-bg-color);
+    border-top: 2px solid var(--profile-border-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid var(--profile-secondary-border-color);
+    margin: 0px 0px;
+    padding: 10px 20px;
+}
+
+.profile-menu-sp {
+    z-index: 0;
+    width: 140px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background-color: var(--profile-bg-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-bottom: 2px solid var(--profile-border-color);
+    border-bottom-left-radius: 10px;
+    border-right: 2px solid var(--profile-secondary-border-color);
+}
+
+.profile-content-sp {
+    z-index: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: var(--profile-bg-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-bottom: 2px solid var(--profile-border-color);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.profile-compact-content-sp {
+    z-index: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: var(--profile-bg-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-bottom: 2px solid var(--profile-border-color);
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.menu-toggler-sp{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-right: 78%;
+    transition: 0.2s;
+}
+.menu-toggler-sp:hover{
+    cursor: pointer;
+    color: var(--active-element-color);
+    transition: 0.2s;
+}
+
 .service-card {
   overflow: hidden;
   margin: 25px 30px;

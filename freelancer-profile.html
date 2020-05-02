@@ -99,7 +99,7 @@
       </nav>
     </header>
 
-    <!-- PROFILE PAGE -->
+    <!-- PROFILE PAGE FOR LARGER SCREENS -->
     <section class="d-none d-lg-block">
       <!-- SERVICE IMAGE AND CURRENT SELECTED OPTION'S TITLE -->
       <div class="d-flex align-items-stretch d-none d-md-block container">
@@ -134,6 +134,181 @@
           </div>
           <!-- CONTENT -->
           <div class="profile-content col row justify-content-center">
+            <div class="service-information">
+              <ul
+                class="nav nav-tabs flex-column flex-sm-row"
+                id="myTab"
+                role="tablist"
+              >
+                <li class="nav-item">
+                  <a
+                    class="flex-sm-fill text-sm-center nav-link active"
+                    id="package-1-tab"
+                    data-toggle="tab"
+                    href="#package-1"
+                    role="tab"
+                    aria-controls="package-1"
+                    aria-selected="true"
+                    >Package 1</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="flex-sm-fill text-sm-center nav-link"
+                    id="package-2-tab"
+                    data-toggle="tab"
+                    href="#package-2"
+                    role="tab"
+                    aria-controls="package-2"
+                    aria-selected="false"
+                    >Package 2</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="flex-sm-fill text-sm-center nav-link"
+                    id="package-3-tab"
+                    data-toggle="tab"
+                    href="#package-3"
+                    role="tab"
+                    aria-controls="package-3"
+                    aria-selected="false"
+                    >Package 3</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="package-tabs">
+                <div
+                  class="tab-pane fade show active"
+                  id="package-1"
+                  role="tabpanel"
+                  aria-labelledby="package-1-tab"
+                >
+                  <ul>
+                    <li>it has this</li>
+                    <li>it has that</li>
+                    <li>maybe this as well</li>
+                  </ul>
+                  <button class="btn btn-primary">Order this Package</button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="package-2"
+                  role="tabpanel"
+                  aria-labelledby="package-2-tab"
+                >
+                  <ul>
+                    <li>it has this</li>
+                    <li>it has that</li>
+                    <li>maybe this as well</li>
+                  </ul>
+                  <button class="btn btn-primary">Order this Package</button>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="package-3"
+                  role="tabpanel"
+                  aria-labelledby="package-3-tab"
+                >
+                  <ul>
+                    <li>it has this</li>
+                    <li>it has that</li>
+                    <li>maybe this as well</li>
+                  </ul>
+                  <button class="btn btn-primary">Order this Package</button>
+                </div>
+              </div>
+            </div>
+
+            <h2 style="margin-bottom: -50px;">Freelancer service reviews</h2>
+            <div class="service-reviews row justify-content-center">
+              <div class="review-card">
+                <h4 class="review-card-title text-center">He is great!</h4>
+                <p class="review-card-freelancer">customer 1</p>
+                <p class="review-card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+              <div class="review-card">
+                <h4 class="review-card-title text-center">He is great!</h4>
+                <p class="review-card-freelancer">customer 1</p>
+                <p class="review-card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+              <div class="review-card">
+                <h4 class="review-card-title text-center">He is great!</h4>
+                <p class="review-card-freelancer">customer 1</p>
+                <p class="review-card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="review-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE PAGE FOR SMALLER SCREENS -->
+    <section class="d-lg-none">
+      <!-- SERVICE IMAGE AND CURRENT SELECTED OPTION'S TITLE -->
+      <div class="d-flex align-items-stretch d-none d-md-block container">
+        <div class="profile-header row">
+          <div class="profile-service-img-holder-sp">
+            <img
+              class="profile-service-img"
+              src="images/temp2.jpg"
+              alt="profile image"
+            />
+          </div>
+          <div class="profile-selected-opt-info-sp flex-grow-1">
+            <i class="profile-selected-opt-title">Service 1</i>
+            <p class="profile-selected-opt-description">
+              This is info describing the selected service from the menu below
+              the image.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- PROFILE MENU (BELOW IMAGE) AND CONTENT OF SELECTED OPTION -->
+      <div class="d-flex align-items-stretch d-none d-md-block container">
+        <div class="row">
+          <!-- MENU -->
+          <div class="profile-menu-sp d-none" id="profile-menu-sp">
+            <ul class="profile-menu-items text-center">
+              <li class="profile-menu-item">Service 1</li>
+              <li class="profile-menu-item">Service 2</li>
+              <li class="profile-menu-item">Service 2</li>
+              <li class="profile-menu-item">Freelancer Progress Timeline</li>
+            </ul>
+          </div>
+          <!-- CONTENT -->
+          <div class="profile-content-sp col row justify-content-center" id="profile-content-sp">
+            <div class="menu-toggler-sp" id="menu-toggler-sp" onclick="toggleMenu()">
+              menu
+              <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
+            </div>
             <div class="service-information">
               <ul
                 class="nav nav-tabs flex-column flex-sm-row"
@@ -330,5 +505,6 @@
 
     <!-- OUR OWN JS FILES -->
     <script src="js/shared-style-script.js"></script>
+    <script src="js/profile-script.js"></script>
   </body>
 </html>
