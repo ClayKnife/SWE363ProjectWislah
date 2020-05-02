@@ -127,15 +127,13 @@
 }
 
 .profile-menu-sp {
-    z-index: 0;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
     width: 140px;
-    margin-top: 0px;
-    margin-bottom: 50px;
     background-color: var(--profile-bg-color);
-    border-left: 2px solid var(--profile-border-color);
-    border-bottom: 2px solid var(--profile-border-color);
-    border-bottom-left-radius: 10px;
-    border-right: 2px solid var(--profile-secondary-border-color);
+    border: 2px solid var(--profile-border-color);
+    border-radius: 10px;
 }
 
 .profile-content-sp {

@@ -51,16 +51,16 @@ function toggleMenu(){
         $('#profile-menu').removeClass('d-none');
         $('#menu-toggler-icon').removeClass('fa-arrow-circle-right');
         $('#menu-toggler-icon').addClass('fa-arrow-circle-left');
-        $('#profile-content').removeClass('profile-content-sp');
-        $('#profile-content').addClass('profile-compact-content-sp');
+        document.getElementById('menu-toggler-sp').style.marginRight = "0%";
+        document.getElementById('menu-toggler-sp').style.marginLeft = "30%";
         menuHiddenSP = false;
     }
     else{
         $('#profile-menu').addClass('d-none');
         $('#menu-toggler-icon').removeClass('fa-arrow-circle-left');
         $('#menu-toggler-icon').addClass('fa-arrow-circle-right');
-        $('#profile-content').removeClass('profile-compact-content-sp');
-        $('#profile-content').addClass('profile-content-sp');
+        document.getElementById('menu-toggler-sp').style.marginLeft = "0%";
+        document.getElementById('menu-toggler-sp').style.marginRight = "78%";
         menuHiddenSP = true;
     }
 }
