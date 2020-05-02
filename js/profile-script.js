@@ -6,7 +6,8 @@ window.onload = function(){
         $('#profile-selected-opt-info').addClass('profile-selected-opt-info-sp');
         $('#profile-menu').removeClass('profile-menu');
         $('#profile-menu').addClass('profile-menu-sp');
-        $('#profile-menu').addClass('d-none');
+        if(this.menuHiddenSP)
+            $('#profile-menu').addClass('d-none');
         $('#profile-content').removeClass('profile-content');
         $('#profile-content').addClass('profile-content-sp');
         $('#menu-toggler-sp').removeClass('d-none');
@@ -24,7 +25,8 @@ window.onresize = function(){
         $('#profile-selected-opt-info').addClass('profile-selected-opt-info-sp');
         $('#profile-menu').removeClass('profile-menu');
         $('#profile-menu').addClass('profile-menu-sp');
-        $('#profile-menu').addClass('d-none');
+        if(this.menuHiddenSP)
+            $('#profile-menu').addClass('d-none');
         $('#profile-content').removeClass('profile-content');
         $('#profile-content').addClass('profile-content-sp');
         $('#menu-toggler-sp').removeClass('d-none');
