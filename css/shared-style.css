@@ -96,6 +96,18 @@ a:hover {
   outline: none;
 }
 
+
+.page-footer {
+  margin-top: 3rem;
+  background-color: #2d2d2d;
+  color: white;
+}
+
+h5 {
+  align-self: center;
+  margin-right: 6px;
+}
+
 /* I just want the main container to be larger than what was default in bootstrap so I increased it for container */
 @media (min-width: 1400px) {
   .container {
