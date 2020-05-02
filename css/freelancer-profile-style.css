@@ -10,7 +10,7 @@
   --card-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-.profile-header {
+/* .profile-header {
   margin-top: 8rem;
 }
 
@@ -100,7 +100,7 @@
   margin-bottom: 50px;
 }
 
-/* sp stands for small profile */
+ sp stands for small profile
 .profile-service-img-holder-sp {
     background-color: var(--profile-bg-color);
     margin-right: auto;
@@ -174,7 +174,7 @@
     cursor: pointer;
     color: var(--active-element-color);
     transition: 0.2s;
-}
+} */
 
 .service-information {
   margin: 50px;

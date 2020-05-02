@@ -99,19 +99,19 @@
       </nav>
     </header>
 
-    <!-- PROFILE PAGE FOR LARGER SCREENS -->
-    <section class="d-none d-lg-block">
+    <!-- PROFILE PAGE -->
+    <section id="profile-container">
       <!-- PROFILE IMAGE AND CURRENT SELECTED OPTION'S TITLE -->
       <div class="d-flex align-items-stretch d-none d-md-block container">
         <div class="profile-header row">
-          <div class="profile-img-holder">
+          <div class="profile-img-holder" id="profile-img-holder">
             <img
               class="profile-img"
               src="images/temp2.jpg"
               alt="profile image"
             />
           </div>
-          <div class="profile-selected-opt-info flex-grow-1">
+          <div class="profile-selected-opt-info flex-grow-1" id="profile-selected-opt-info">
             <i class="profile-selected-opt-title">My Orders</i>
             <p class="profile-selected-opt-description">
               This is info describing the selected item from the menu below the
@@ -123,145 +123,14 @@
       <!-- PROFILE MENU (BELOW IMAGE) AND CONTENT OF SELECTED OPTION -->
       <div class="d-flex align-items-stretch d-none d-md-block container">
         <div class="row">
-          <div class="profile-menu">
+          <div class="profile-menu" id="profile-menu">
             <ul class="profile-menu-items text-center">
               <li class="profile-menu-item" id="my-orders">My Orders</li>
               <li class="profile-menu-item" id="inbox">Inbox</li>
               <li class="profile-menu-item" id="settings">Settings</li>
             </ul>
           </div>
-          <div class="profile-content col row justify-content-center">
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-
-            <div class="service-card">
-              <h4 class="service-card-title text-center">Service 1</h4>
-              <p class="service-card-freelancer">Freelancer</p>
-              <p class="service-card-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="service-status">
-                <i class="service-status-label">Service Status: </i>
-                <i class="fas fa-check">done</i>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROFILE PAGE FOR SMALLER SCREENS -->
-    <section class="d-lg-none">
-      <!-- PROFILE IMAGE AND CURRENT SELECTED OPTION'S TITLE -->
-      <div class="d-flex align-items-stretch container">
-        <div class="profile-header row">
-          <div class="profile-img-holder-sp">
-            <img
-              class="profile-img"
-              src="images/temp2.jpg"
-              alt="profile image"
-            />
-          </div>
-          <div class="profile-selected-opt-info-sp flex-grow-1">
-            <i class="profile-selected-opt-title">My Orders</i>
-            <p class="profile-selected-opt-description">
-              This is info describing the selected item from the menu within content.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- PROFILE MENU (BELOW IMAGE) AND CONTENT OF SELECTED OPTION -->
-      <div class="d-flex align-items-stretch d-none d-md-block container">
-        <div class="row">
-          <div class="profile-menu-sp d-none" id="profile-menu-sp">
-            <ul class="profile-menu-items text-center">
-              <li class="profile-menu-item" id="my-orders">My Orders</li>
-              <li class="profile-menu-item" id="inbox">Inbox</li>
-              <li class="profile-menu-item" id="settings">Settings</li>
-            </ul>
-          </div>
-          <div class="profile-content-sp col row justify-content-center" id="profile-content-sp">
+          <div class="profile-content col row justify-content-center" id="profile-content">
             <div class="menu-toggler-sp" id="menu-toggler-sp" onclick="toggleMenu()">
               menu
               <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
