@@ -51,7 +51,7 @@ function toggleMenu(){
         $('#profile-menu').removeClass('d-none');
         $('#menu-toggler-icon').removeClass('fa-arrow-circle-right');
         $('#menu-toggler-icon').addClass('fa-arrow-circle-left');
-        document.getElementById('menu-toggler-sp').style.marginRight = "0%";
+        document.getElementById('menu-toggler-sp').style.marginRight = "30%";
         document.getElementById('menu-toggler-sp').style.marginLeft = "30%";
         menuHiddenSP = false;
     }
