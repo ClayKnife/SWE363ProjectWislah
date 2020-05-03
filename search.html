@@ -98,101 +98,103 @@
         </div>
       </nav>
     </header>
-
-    <div class="container pl-4">
-      <h4 class="ml-2">Filter</h4>
-    </div>
-
+    
     <!-- filters container -->
-    <div
-      class="container mt-3 pl-4 d-none d-sm-none d-md-flex flex-nowrap flex-stretch-0"
-    >
-      <!-- delivery date -->
-      <div class="dropdown ml-2">
-        <button
-          type="button"
-          class="btn btn-light dropdown-toggle"
-          data-toggle="dropdown"
-        >
-          Delivery Date
-        </button>
-        <div id="d-date" class="dropdown-menu">
-          <a class="dropdown-item" href="#">3-5 Days</a>
-          <a class="dropdown-item" href="#">1 Week</a>
-          <a class="dropdown-item" href="#">2 Weeks</a>
-        </div>
+    <section class="filter-container">
+      <div class="container pl-4">
+        <h4 class="ml-2">Filter</h4>
       </div>
-      <!-- category -->
-      <div class="dropdown ml-2">
-        <button
-          type="button"
-          class="btn btn-light dropdown-toggle"
-          data-toggle="dropdown"
-        >
-          Category
-        </button>
-        <div id="category" class="dropdown-menu">
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-code"></i>
-            Programming
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-paint-brush"></i>
-            Designing
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-music"></i>
-            Music
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-poll"></i>
-            Marketing</a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-hashtag"></i>
-            Social Media</a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-copyright"></i>
-            Branding
-          </a>
-        </div>
-      </div>
-      <!-- price range -->
-      <div class="d-flex ml-4">
-        <h5>Price Range</h5>
-        <label class="sr-only" for="inlineFormInputGroupUsername2">min</label>
-        <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">$</div>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            id="inlineFormInputGroupUsername2"
-            placeholder="Min"
-          />
-        </div>
 
-        <label class="sr-only" for="inlineFormInputGroupUsername2">Max</label>
-        <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
-          <div class="input-group-prepend">
-            <div class="input-group-text">$</div>
-          </div>
-          <input
-            type="text"
-            class="form-control"
-            id="inlineFormInputGroupUsername2"
-            placeholder="Max"
-          />
-        </div>
-      </div>
-      <button
-        type="button"
-        class="btn btn-dark"
-        style="max-height: 38px; background-color: #0e1d32;"
+      <div
+        class="container mt-3 pl-4 d-none d-sm-none d-md-flex flex-nowrap flex-stretch-0"
       >
-        Apply
-      </button>
-    </div>
+        <!-- delivery date -->
+        <div class="dropdown ml-2">
+          <button
+            type="button"
+            class="btn btn-light dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Delivery Date
+          </button>
+          <div id="d-date" class="dropdown-menu">
+            <a class="dropdown-item" href="#">3-5 Days</a>
+            <a class="dropdown-item" href="#">1 Week</a>
+            <a class="dropdown-item" href="#">2 Weeks</a>
+          </div>
+        </div>
+        <!-- category -->
+        <div class="dropdown ml-2">
+          <button
+            type="button"
+            class="btn btn-light dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Category
+          </button>
+          <div id="category" class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-code"></i>
+              Programming
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-paint-brush"></i>
+              Designing
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-music"></i>
+              Music
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-poll"></i>
+              Marketing</a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-hashtag"></i>
+              Social Media</a>
+            <a class="dropdown-item" href="#">
+              <i class="fas fa-copyright"></i>
+              Branding
+            </a>
+          </div>
+        </div>
+        <!-- price range -->
+        <div class="d-flex ml-4">
+          <h5>Price Range</h5>
+          <label class="sr-only" for="inlineFormInputGroupUsername2">min</label>
+          <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Min"
+            />
+          </div>
+
+          <label class="sr-only" for="inlineFormInputGroupUsername2">Max</label>
+          <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Max"
+            />
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-dark"
+          style="max-height: 38px; background-color: #0e1d32;"
+        >
+          Apply
+        </button>
+      </div>
+    </section>
 
     <!-- services container -->
     <div class="container justify-content-start mt-3 d-flex flex-wrap">

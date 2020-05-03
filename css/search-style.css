@@ -7,51 +7,8 @@
   --card-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-/* new styles @author Ryan */
-
-/* bootstrap cards */
-.card {
-  margin: 6px 0;
-  box-shadow: 0 4px 8px 1px var(--card-shadow-color);
-}
-
-.freelancer {
-  color: var(--brand-color);
-}
-
-.actions-container {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  padding: 12px 20px;
-  box-shadow: inset 0px 0px 5px 1px var(--card-shadow-color);
-  background-color: var(--category-card-bg-color);
-}
-
-.like-count {
-  margin-left: 6px;
-}
-
-.rating-container {
-  color: darkorange;
-}
-
-.rating-count {
-  color: grey;
-}
-.card i,
-.card img {
-  cursor: pointer;
-}
-.actions-container i:hover {
-  color: var(--brand-color);
-}
-
-.card-img-top {
-  object-fit: cover;
-  height: 190px;
-  width: 100%;
+.filter-container{
+  margin-top: 3rem;
 }
 
 .wislah-active,
