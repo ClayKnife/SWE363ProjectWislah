@@ -3,6 +3,7 @@
   --profile-secondary-border-color: #d6d5d5;
   --profile-bg-color: #ffffff;
   --active-element-bg-color: #93b5c6;
+  --active-button-bg-color: #c9ebfc;
   --active-element-color: #4c9fc9;
   --service-card-img-bg-color: #b9a8a8;
   --category-card-content-color: #0f0f0f;
@@ -231,6 +232,14 @@
     box-shadow: 0 10px 16px 0 var(--card-shadow-color);
     cursor: pointer;
 }
+.service-card-selected {
+  box-shadow: 0 10px 16px 0 var(--active-element-bg-color);
+  cursor: pointer;
+}
+.service-card-selected:hover {
+  box-shadow: 0 10px 16px 0 var(--active-element-bg-color);
+  cursor: pointer;
+}
 
 .service-card-title {
   font-weight: 800;
@@ -261,4 +270,46 @@
 .service-card-description {
   clear: both;
   float: left;
+}
+
+.status-bar{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.status-button{
+  font-size: 1.2rem;
+  font-weight: 800;
+  min-width: 8rem;
+  border-radius: 5px;
+  margin: 0px 20px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+.status-button:hover{
+  background-color: var(--active-button-bg-color);
+  transition: 0.3s;
+}
+
+/* the following are the status colors */
+.pending{
+  color: var(--service-status-pending);
+}
+
+.accepted{
+  color: var(--service-status-accepted);
+}
+
+.ongoing{
+  color: var(--service-status-ongoing);
+}
+
+.completed{
+  color: var(--service-status-completed);
+}
+
+.rejected{
+  color: var(--service-status-rejected);
 }

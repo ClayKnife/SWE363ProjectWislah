@@ -1,3 +1,6 @@
+var selectedCard = ""; //this variable changes based on which card is selected to change status of, contains element's ID
+var menuHiddenSP = true;
+
 window.onload = function(){
     if(window.innerWidth <= 991){
         $('#profile-img-holder').removeClass('profile-img-holder');
@@ -47,7 +50,6 @@ window.onresize = function(){
     }
 }
 
-var menuHiddenSP = true;
 function toggleMenu(){
     if(menuHiddenSP){
         $('#profile-menu').removeClass('d-none');
@@ -79,4 +81,27 @@ function toggleMenuSelectedPFP(menuSelected){
     $('#'+menuSelected+'-content').removeClass('d-none');
     $('#'+menuSelected+'-info').removeClass('d-none');
     $('#'+menuSelected+'-img').removeClass('d-none');
+}
+
+function toggleSelectedCard(cardSelected){
+    if($('#'+cardSelected).hasClass('service-card-selected')){
+        $('#'+cardSelected).removeClass('service-card-selected');
+        selectedCard = "";
+    }
+    else{
+        for(i=1; i<=1; i++){
+            $('#card'+i).removeClass('service-card-selected');
+        }
+        $('#'+cardSelected).addClass('service-card-selected');
+        selectedCard = ""+cardSelected;
+    }
+}
+
+function setStatus(status){
+    if(selectedCard==""){
+
+    }
+    else{
+        //do something with the status variable and selected card variable
+    }
 }

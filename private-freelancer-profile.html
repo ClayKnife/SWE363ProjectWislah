@@ -114,7 +114,7 @@
             <section id="menu1-info">
                 <i class="profile-selected-opt-title">Manage services</i>
                 <p class="profile-selected-opt-description">
-                Check on your current services and decide what to do with them
+                Set status of a selected service with the status bar
                 </p>
             </section>
             <section class="d-none" id="menu2-info">
@@ -151,13 +151,27 @@
                 </div>
                 <!-- content for menu 1 -->
                 <div class="col row justify-content-center" id="menu1-content">
-                    <div class="service-card">
+                    <div class="status-bar">
+                        <button class="status-button">
+                            <i class="fas fa-plus accepted" id="menu-toggler-icon" onclick="setStatus('accepted')"> Accept</i>
+                        </button>
+                        <button class="status-button">
+                            <i class="fas fa-recycle ongoing" id="menu-toggler-icon" onclick="setStatus('ongoing')"> Ongoing</i>
+                        </button>
+                        <button class="status-button">
+                            <i class="fas fa-check completed" id="menu-toggler-icon" onclick="setStatus('completed')"> Completed</i>
+                        </button>
+                        <button class="status-button">
+                            <i class="fas fa-times rejected" id="menu-toggler-icon" onclick="setStatus('rejected')"> Rejected</i>
+                        </button>
+                    </div>
+                    <div class="service-card" id="card1" onclick="toggleSelectedCard('card1')">
                         <div class="service-category">
                             <i class="service-category-img fas fa-code"></i>
                             <h4 class="service-category-title">Programming</h4>
                         </div>
                         <h4 class="service-card-title text-center">Service 1</h4>
-                        <p class="service-card-customer">customer</p>
+                        <p class="service-card-customer">customer <br>contact details</p>
                         <p class="service-card-description">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
