@@ -106,18 +106,32 @@
       <div class="d-flex align-items-stretch d-none d-md-block container">
         <div class="profile-header row">
           <div class="profile-img-holder" id="profile-img-holder">
-            <img
-              class="profile-img"
-              src="images/temp2.jpg"
-              alt="profile image"
-            />
+            <i class="profile-img fas fa-thumbtack" id="menu1-img"></i>
+            <i class="profile-img fas fa-thumbtack d-none" id="menu2-img"></i>
+            <i class="profile-img fas fa-thumbtack d-none" id="menu3-img"></i>
           </div>
           <div class="profile-selected-opt-info flex-grow-1" id="profile-selected-opt-info">
-            <i class="profile-selected-opt-title">Service 1</i>
-            <p class="profile-selected-opt-description">
-              This is info describing the selected service from the menu below
-              the image.
-            </p>
+            <section id="menu1-info">
+              <i class="profile-selected-opt-title">Service 1</i>
+              <p class="profile-selected-opt-description">
+                This is info describing the selected service from the menu below
+                the image.
+              </p>
+            </section>
+            <section class="d-none" id="menu2-info">
+              <i class="profile-selected-opt-title">Service 2</i>
+              <p class="profile-selected-opt-description">
+                This is info describing the selected service from the menu below
+                the image.
+              </p>
+            </section>
+            <section class="d-none" id="menu3-info">
+              <i class="profile-selected-opt-title">Service 3</i>
+              <p class="profile-selected-opt-description">
+                This is info describing the selected service from the menu below
+                the image.
+              </p>
+            </section>
           </div>
         </div>
       </div>
@@ -134,138 +148,400 @@
           </div>
           <!-- CONTENT -->
           <div class="profile-content col row justify-content-center" id="profile-content"> 
-            <!-- copy above line and encase whats below to create multiple pages, call id as menu1-content for example -->
             <div class="menu-toggler-sp" id="menu-toggler-sp" onclick="toggleMenu()">
               menu
               <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
             </div>
-            <div class="service-information">
-              <ul
-                class="nav nav-tabs flex-column flex-sm-row"
-                id="myTab"
-                role="tablist"
-              >
-                <li class="nav-item">
-                  <a
-                    class="flex-sm-fill text-sm-center nav-link active"
-                    id="package-1-tab"
-                    data-toggle="tab"
-                    href="#package-1"
-                    role="tab"
-                    aria-controls="package-1"
-                    aria-selected="true"
-                    >Package 1</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="flex-sm-fill text-sm-center nav-link"
-                    id="package-2-tab"
-                    data-toggle="tab"
-                    href="#package-2"
-                    role="tab"
-                    aria-controls="package-2"
-                    aria-selected="false"
-                    >Package 2</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="flex-sm-fill text-sm-center nav-link"
-                    id="package-3-tab"
-                    data-toggle="tab"
-                    href="#package-3"
-                    role="tab"
-                    aria-controls="package-3"
-                    aria-selected="false"
-                    >Package 3</a
-                  >
-                </li>
-              </ul>
-              <div class="tab-content" id="package-tabs">
-                <div
-                  class="tab-pane fade show active"
-                  id="package-1"
-                  role="tabpanel"
-                  aria-labelledby="package-1-tab"
+            <!-- menu1 content -->
+            <section class="col row justify-content-center" id="menu1-content">
+              <div class="service-information">
+                <ul
+                  class="nav nav-tabs flex-column flex-sm-row"
+                  id="myTab"
+                  role="tablist"
                 >
-                  <p id="package-description">
-                    this package offers xyz with a hint of hjk
-                  </p>
-                  <p id="package-price">like three fiddy</p>
-                  <button class="btn btn-primary">Order this Package</button>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="package-2"
-                  role="tabpanel"
-                  aria-labelledby="package-2-tab"
-                >
-                  <p id="package-description">
-                    this package offers xyz with a hint of hjk
-                  </p>
-                  <p id="package-price">like three fiddy</p>
-                  <button class="btn btn-primary">Order this Package</button>
-                </div>
-                <div
-                  class="tab-pane fade"
-                  id="package-3"
-                  role="tabpanel"
-                  aria-labelledby="package-3-tab"
-                >
-                  <p id="package-description">
-                    this package offers xyz with a hint of hjk
-                  </p>
-                  <p id="package-price">like three fiddy</p>
-                  <button class="btn btn-primary">Order this Package</button>
+                  <li class="nav-item">
+                    <a
+                      class="flex-sm-fill text-sm-center nav-link active"
+                      id="package-1-tab"
+                      data-toggle="tab"
+                      href="#package-1"
+                      role="tab"
+                      aria-controls="package-1"
+                      aria-selected="true"
+                      >Package 1</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="flex-sm-fill text-sm-center nav-link"
+                      id="package-2-tab"
+                      data-toggle="tab"
+                      href="#package-2"
+                      role="tab"
+                      aria-controls="package-2"
+                      aria-selected="false"
+                      >Package 2</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="flex-sm-fill text-sm-center nav-link"
+                      id="package-3-tab"
+                      data-toggle="tab"
+                      href="#package-3"
+                      role="tab"
+                      aria-controls="package-3"
+                      aria-selected="false"
+                      >Package 3</a
+                    >
+                  </li>
+                </ul>
+                <div class="tab-content" id="package-tabs">
+                  <div
+                    class="tab-pane fade show active"
+                    id="package-1"
+                    role="tabpanel"
+                    aria-labelledby="package-1-tab"
+                  >
+                    <p id="package-description">
+                      this package offers xyz with a hint of hjk
+                    </p>
+                    <p id="package-price">like three fiddy</p>
+                    <button class="btn btn-primary">Order this Package</button>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="package-2"
+                    role="tabpanel"
+                    aria-labelledby="package-2-tab"
+                  >
+                    <p id="package-description">
+                      this package offers xyz with a hint of hjk
+                    </p>
+                    <p id="package-price">like three fiddy</p>
+                    <button class="btn btn-primary">Order this Package</button>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="package-3"
+                    role="tabpanel"
+                    aria-labelledby="package-3-tab"
+                  >
+                    <p id="package-description">
+                      this package offers xyz with a hint of hjk
+                    </p>
+                    <p id="package-price">like three fiddy</p>
+                    <button class="btn btn-primary">Order this Package</button>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <h2 style="margin-bottom: -50px;">Freelancer service reviews</h2>
-            <div class="service-reviews row justify-content-center">
-              <div class="review-card">
-                <h4 class="review-card-title text-center">He is great!</h4>
-                <p class="review-card-freelancer">customer 1</p>
-                <p class="review-card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <p class="review-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </p>
-              </div>
-              <div class="review-card">
-                <h4 class="review-card-title text-center">He is great!</h4>
-                <p class="review-card-freelancer">customer 1</p>
-                <p class="review-card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <p class="review-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </p>
-              </div>
-              <div class="review-card">
-                <h4 class="review-card-title text-center">He is great!</h4>
-                <p class="review-card-freelancer">customer 1</p>
-                <p class="review-card-description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-                <p class="review-rating">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </p>
-              </div>
+              <h2 style="margin-bottom: -50px;">Freelancer service reviews</h2>
+              <div class="service-reviews row justify-content-center">
+                <div class="review-card">
+                  <h4 class="review-card-title text-center">He is great!</h4>
+                  <p class="review-card-freelancer">customer 1</p>
+                  <p class="review-card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                </div>
+                <div class="review-card">
+                  <h4 class="review-card-title text-center">He is great!</h4>
+                  <p class="review-card-freelancer">customer 1</p>
+                  <p class="review-card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                </div>
+                <div class="review-card">
+                  <h4 class="review-card-title text-center">He is great!</h4>
+                  <p class="review-card-freelancer">customer 1</p>
+                  <p class="review-card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <p class="review-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                </div>
+              </section>
+              <!-- menu2 content -->
+              <section class="col row justify-content-center d-none" id="menu2-content">
+                <div class="service-information">
+                  <ul
+                    class="nav nav-tabs flex-column flex-sm-row"
+                    id="myTab"
+                    role="tablist"
+                  >
+                    <li class="nav-item">
+                      <a
+                        class="flex-sm-fill text-sm-center nav-link active"
+                        id="package-1-tab"
+                        data-toggle="tab"
+                        href="#package-1"
+                        role="tab"
+                        aria-controls="package-1"
+                        aria-selected="true"
+                        >Package 1</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="flex-sm-fill text-sm-center nav-link"
+                        id="package-2-tab"
+                        data-toggle="tab"
+                        href="#package-2"
+                        role="tab"
+                        aria-controls="package-2"
+                        aria-selected="false"
+                        >Package 2</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="flex-sm-fill text-sm-center nav-link"
+                        id="package-3-tab"
+                        data-toggle="tab"
+                        href="#package-3"
+                        role="tab"
+                        aria-controls="package-3"
+                        aria-selected="false"
+                        >Package 3</a
+                      >
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="package-tabs">
+                    <div
+                      class="tab-pane fade show active"
+                      id="package-1"
+                      role="tabpanel"
+                      aria-labelledby="package-1-tab"
+                    >
+                      <p id="package-description">
+                        this package offers xyz with a hint of hjk
+                      </p>
+                      <p id="package-price">like three fiddy</p>
+                      <button class="btn btn-primary">Order this Package</button>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="package-2"
+                      role="tabpanel"
+                      aria-labelledby="package-2-tab"
+                    >
+                      <p id="package-description">
+                        this package offers xyz with a hint of hjk
+                      </p>
+                      <p id="package-price">like three fiddy</p>
+                      <button class="btn btn-primary">Order this Package</button>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="package-3"
+                      role="tabpanel"
+                      aria-labelledby="package-3-tab"
+                    >
+                      <p id="package-description">
+                        this package offers xyz with a hint of hjk
+                      </p>
+                      <p id="package-price">like three fiddy</p>
+                      <button class="btn btn-primary">Order this Package</button>
+                    </div>
+                  </div>
+                </div>
+  
+                <h2 style="margin-bottom: -50px;">Freelancer service reviews</h2>
+                <div class="service-reviews row justify-content-center">
+                  <div class="review-card">
+                    <h4 class="review-card-title text-center">He is great!</h4>
+                    <p class="review-card-freelancer">customer 1</p>
+                    <p class="review-card-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="review-card">
+                    <h4 class="review-card-title text-center">He is great!</h4>
+                    <p class="review-card-freelancer">customer 1</p>
+                    <p class="review-card-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                  </div>
+                  <div class="review-card">
+                    <h4 class="review-card-title text-center">He is great!</h4>
+                    <p class="review-card-freelancer">customer 1</p>
+                    <p class="review-card-description">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="review-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                  </div>
+                </section>
+                <!-- menu3 content -->
+                <section class="col row justify-content-center d-none" id="menu3-content">
+                  <div class="service-information">
+                    <ul
+                      class="nav nav-tabs flex-column flex-sm-row"
+                      id="myTab"
+                      role="tablist"
+                    >
+                      <li class="nav-item">
+                        <a
+                          class="flex-sm-fill text-sm-center nav-link active"
+                          id="package-1-tab"
+                          data-toggle="tab"
+                          href="#package-1"
+                          role="tab"
+                          aria-controls="package-1"
+                          aria-selected="true"
+                          >Package 1</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="flex-sm-fill text-sm-center nav-link"
+                          id="package-2-tab"
+                          data-toggle="tab"
+                          href="#package-2"
+                          role="tab"
+                          aria-controls="package-2"
+                          aria-selected="false"
+                          >Package 2</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="flex-sm-fill text-sm-center nav-link"
+                          id="package-3-tab"
+                          data-toggle="tab"
+                          href="#package-3"
+                          role="tab"
+                          aria-controls="package-3"
+                          aria-selected="false"
+                          >Package 3</a
+                        >
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="package-tabs">
+                      <div
+                        class="tab-pane fade show active"
+                        id="package-1"
+                        role="tabpanel"
+                        aria-labelledby="package-1-tab"
+                      >
+                        <p id="package-description">
+                          this package offers xyz with a hint of hjk
+                        </p>
+                        <p id="package-price">like three fiddy</p>
+                        <button class="btn btn-primary">Order this Package</button>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="package-2"
+                        role="tabpanel"
+                        aria-labelledby="package-2-tab"
+                      >
+                        <p id="package-description">
+                          this package offers xyz with a hint of hjk
+                        </p>
+                        <p id="package-price">like three fiddy</p>
+                        <button class="btn btn-primary">Order this Package</button>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="package-3"
+                        role="tabpanel"
+                        aria-labelledby="package-3-tab"
+                      >
+                        <p id="package-description">
+                          this package offers xyz with a hint of hjk
+                        </p>
+                        <p id="package-price">like three fiddy</p>
+                        <button class="btn btn-primary">Order this Package</button>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <h2 style="margin-bottom: -50px;">Freelancer service reviews</h2>
+                  <div class="service-reviews row justify-content-center">
+                    <div class="review-card">
+                      <h4 class="review-card-title text-center">He is great!</h4>
+                      <p class="review-card-freelancer">customer 1</p>
+                      <p class="review-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <p class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+                    </div>
+                    <div class="review-card">
+                      <h4 class="review-card-title text-center">He is great!</h4>
+                      <p class="review-card-freelancer">customer 1</p>
+                      <p class="review-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <p class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+                    </div>
+                    <div class="review-card">
+                      <h4 class="review-card-title text-center">He is great!</h4>
+                      <p class="review-card-freelancer">customer 1</p>
+                      <p class="review-card-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      </p>
+                      <p class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+                    </div>
+                  </section>
             </div>
           </div>
         </div>

@@ -69,18 +69,30 @@ function toggleMenu(){
 
 function toggleMenuSelectedP(menuSelected){
     //i is the number of menu items customer can see, most likely fixed to 2 menu items
-    for(i=1; i<=2; i++)
+    for(i=1; i<=2; i++){
         $('#menu'+i).removeClass('profile-menu-item-selected');
+        $('#menu'+i+'-content').addClass('d-none');
+        $('#menu'+i+'-info').addClass('d-none');
+        $('#menu'+i+'-img').addClass('d-none');
+    }
     $('#'+menuSelected).addClass('profile-menu-item-selected');
-    getContentP(menuSelected);
+    $('#'+menuSelected+'-content').removeClass('d-none');
+    $('#'+menuSelected+'-info').removeClass('d-none');
+    $('#'+menuSelected+'-img').removeClass('d-none');
 }
 
 function toggleMenuSelectedFP(menuSelected){
     //i needs to be the number of services that freelancer has so figure it out
-    for(i=1; i<=3; i++)
+    for(i=1; i<=3; i++){
         $('#menu'+i).removeClass('profile-menu-item-selected');
+        $('#menu'+i+'-content').addClass('d-none');
+        $('#menu'+i+'-info').addClass('d-none');
+        $('#menu'+i+'-img').addClass('d-none');
+    }
     $('#'+menuSelected).addClass('profile-menu-item-selected');
-    getContentFP(menuSelected);
+    $('#'+menuSelected+'-content').removeClass('d-none');
+    $('#'+menuSelected+'-info').removeClass('d-none');
+    $('#'+menuSelected+'-img').removeClass('d-none');
 }
 
 function toggleMenuSelectedPFP(menuSelected){
@@ -89,21 +101,10 @@ function toggleMenuSelectedPFP(menuSelected){
         $('#menu'+i).removeClass('profile-menu-item-selected');
         $('#menu'+i+'-content').addClass('d-none');
         $('#menu'+i+'-info').addClass('d-none');
+        $('#menu'+i+'-img').addClass('d-none');
     }
     $('#'+menuSelected).addClass('profile-menu-item-selected');
     $('#'+menuSelected+'-content').removeClass('d-none');
     $('#'+menuSelected+'-info').removeClass('d-none');
-    getContentPFP(menuSelected);
-}
-
-function getContentP(menuSelected){
-    //lol
-}
-
-function getContentFP(menuSelected){
-    //lol
-}
-
-function getContentPFP(menuSelected){
-    //lol
+    $('#'+menuSelected+'-img').removeClass('d-none');
 }

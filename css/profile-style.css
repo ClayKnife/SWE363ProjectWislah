@@ -30,12 +30,17 @@
 }
 
 .profile-img {
+  text-align: center;
   z-index: 1;
   width: 10.9375rem;
   height: 10.9375rem;
+  font-size: 7rem;
   border-radius: 20px;
   border: 8px solid var(--profile-bg-color);
+  background-color: var(--profile-border-color);
+  color: var(--profile-bg-color);
   margin-right: 0px;
+  padding: 1.3rem;
 }
 
 .profile-selected-opt-info {
