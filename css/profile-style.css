@@ -207,7 +207,7 @@
 }
 
 .service-status {
-  color: var(--service-status-color);
+  /* let status color made from card creation */
   float: right;
   font-size: 1.2rem;
 }
