@@ -9,6 +9,10 @@
   --service-review-count-color: rgb(117, 117, 117);
 }
 
+.services-section{
+  margin-bottom: 12rem;
+}
+
 .category-card {
   margin: 15px;
   background-color: var(--category-card-bg-color);
