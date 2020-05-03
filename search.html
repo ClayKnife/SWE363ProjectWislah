@@ -24,8 +24,8 @@
     />
     <link rel="stylesheet" href="css/shared-style.css" />
     <link rel="stylesheet" href="css/index-style.css" />
-    <link rel="stylesheet" href="css/services-style.css" />
-    <title>Services</title>
+    <link rel="stylesheet" href="css/search-style.css" />
+    <title>Search</title>
   </head>
 
   <body>
@@ -99,25 +99,15 @@
       </nav>
     </header>
 
-    <div class="container mt-3 pl-3">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb" style="background-color: transparent;">
-          <li class="breadcrumb-item"><a href="#">Technology</a></li>
-          <li class="breadcrumb-item"><a href="#">Programming</a></li>
-          <li class="breadcrumb-item active" aria-current="page">website</li>
-        </ol>
-      </nav>
-    </div>
-
     <div class="container pl-4">
       <h4 class="ml-2">Filter</h4>
     </div>
 
-    <!-- fliters container -->
+    <!-- filters container -->
     <div
       class="container mt-3 pl-4 d-none d-sm-none d-md-flex flex-nowrap flex-stretch-0"
     >
-      <!-- deivery date -->
+      <!-- delivery date -->
       <div class="dropdown ml-2">
         <button
           type="button"
@@ -130,6 +120,40 @@
           <a class="dropdown-item" href="#">3-5 Days</a>
           <a class="dropdown-item" href="#">1 Week</a>
           <a class="dropdown-item" href="#">2 Weeks</a>
+        </div>
+      </div>
+      <!-- category -->
+      <div class="dropdown ml-2">
+        <button
+          type="button"
+          class="btn btn-light dropdown-toggle"
+          data-toggle="dropdown"
+        >
+          Category
+        </button>
+        <div id="category" class="dropdown-menu">
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-code"></i>
+            Programming
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-paint-brush"></i>
+            Designing
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-music"></i>
+            Music
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-poll"></i>
+            Marketing</a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-hashtag"></i>
+            Social Media</a>
+          <a class="dropdown-item" href="#">
+            <i class="fas fa-copyright"></i>
+            Branding
+          </a>
         </div>
       </div>
       <!-- price range -->
@@ -172,135 +196,56 @@
 
     <!-- services container -->
     <div class="container justify-content-start mt-3 d-flex flex-wrap">
-      <div
-        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
-        style="width: 17rem;"
-      >
-        <img src="images/test.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h6 class="card-title freelancer">Khalid Shabloota</h6>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div class="rating-container">
-            <i class="fas fa-star"></i>
-            <span class="rating">4.5</span>
+      <div class="row justify-content-center">
+        <div class="service-card">
+          <div class="service-category">
+            <i class="service-category-img fas fa-code"></i>
+            <h4 class="service-category-title">Programming</h4>
           </div>
+          <h4 class="service-card-title text-center">C# project</h4>
+          <p class="service-card-freelancer">Khalid Shabloota</p>
+          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
         </div>
-        <div class="actions-container">
-          <i class="far fa-heart"></i>
-          <span class="like-count">1.2k</span>
-        </div>
-      </div>
-      <div
-        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
-        style="width: 17rem;"
-      >
-        <img src="images/test.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h6 class="card-title freelancer">Khalid Shabloota</h6>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div class="rating-container">
-            <i class="fas fa-star"></i>
-            <span class="rating">4.5</span>
-            <span class="rating-count">(1.2k)</span>
+        <div class="service-card">
+          <div class="service-category">
+            <i class="service-category-img fas fa-code"></i>
+            <h4 class="service-category-title">Programming</h4>
           </div>
+          <h4 class="service-card-title text-center">C# project</h4>
+          <p class="service-card-freelancer">Khalid Shabloota</p>
+          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
         </div>
-        <div class="actions-container">
-          <i class="far fa-heart"></i>
-          <span class="like-count">1.2k</span>
-        </div>
-      </div>
-      <div
-        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
-        style="width: 17rem;"
-      >
-        <img src="images/test.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h6 class="card-title freelancer">Khalid Shabloota</h6>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div class="rating-container">
-            <i class="fas fa-star"></i>
-            <span class="rating">4.5</span>
-            <span class="rating-count">(1.2k)</span>
+        <div class="service-card">
+          <div class="service-category">
+            <i class="service-category-img fas fa-code"></i>
+            <h4 class="service-category-title">Programming</h4>
           </div>
+          <h4 class="service-card-title text-center">C# project</h4>
+          <p class="service-card-freelancer">Khalid Shabloota</p>
+          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
         </div>
-        <div class="actions-container">
-          <i class="far fa-heart"></i>
-          <span class="like-count">1.2k</span>
-        </div>
-      </div>
-      <div
-        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
-        style="width: 17rem;"
-      >
-        <img src="images/test.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h6 class="card-title freelancer">Khalid Shabloota</h6>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div class="rating-container">
-            <i class="fas fa-star"></i>
-            <span class="rating">4.5</span>
-            <span class="rating-count">(1.2k)</span>
+        <div class="service-card">
+          <div class="service-category">
+            <i class="service-category-img fas fa-code"></i>
+            <h4 class="service-category-title">Programming</h4>
           </div>
+          <h4 class="service-card-title text-center">C# project</h4>
+          <p class="service-card-freelancer">Khalid Shabloota</p>
+          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
         </div>
-        <div class="actions-container">
-          <i class="far fa-heart"></i>
-          <span class="like-count">1.2k</span>
-        </div>
-      </div>
-      <div
-        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
-        style="width: 17rem;"
-      >
-        <img src="images/test.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h6 class="card-title freelancer">Khalid Shabloota</h6>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div class="rating-container">
-            <i class="fas fa-star"></i>
-            <span class="rating">4.5</span>
-            <span class="rating-count">(1.2k)</span>
+        <div class="service-card">
+          <div class="service-category">
+            <i class="service-category-img fas fa-code"></i>
+            <h4 class="service-category-title">Programming</h4>
           </div>
-        </div>
-        <div class="actions-container">
-          <i class="far fa-heart"></i>
-          <span class="like-count">1.2k</span>
-        </div>
-      </div>
-      <div
-        class="card flex-grow-1 ml-md-3 flex-lg-grow-0"
-        style="width: 17rem;"
-      >
-        <img src="images/test.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h6 class="card-title freelancer">Khalid Shabloota</h6>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <div class="rating-container">
-            <i class="fas fa-star"></i>
-            <span class="rating">4.5</span>
-            <span class="rating-count">(1.2k)</span>
-          </div>
-        </div>
-        <div class="actions-container">
-          <i class="far fa-heart"></i>
-          <span class="like-count">1.2k</span>
+          <h4 class="service-card-title text-center">C# project</h4>
+          <p class="service-card-freelancer">Khalid Shabloota</p>
+          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
         </div>
       </div>
     </div>

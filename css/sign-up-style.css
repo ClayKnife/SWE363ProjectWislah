@@ -12,6 +12,7 @@
   border: 2px solid var(--sign-up-border-color);
   background-color: var(--sign-up-bg-color);
   margin: 50px auto;
+  margin-bottom: 12rem;
   padding: 100px;
   border-radius: 20px;
 }

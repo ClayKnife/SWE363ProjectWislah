@@ -18,6 +18,10 @@
   --card-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
+.profile-container{
+    margin-bottom: 10rem;
+}
+
 .profile-header {
   margin-top: 8rem;
 }
