@@ -113,10 +113,24 @@
             />
           </div>
           <div class="profile-selected-opt-info flex-grow-1" id="profile-selected-opt-info">
-            <i class="profile-selected-opt-title">Manage services</i>
-            <p class="profile-selected-opt-description">
-              Check on your current services and decide what to do with them
-            </p>
+            <section id="menu1-info">
+                <i class="profile-selected-opt-title">Manage services</i>
+                <p class="profile-selected-opt-description">
+                Check on your current services and decide what to do with them
+                </p>
+            </section>
+            <section class="d-none" id="menu2-info">
+                <i class="profile-selected-opt-title">Create Service</i>
+                <p class="profile-selected-opt-description">
+                Create a new service for customers to request from you
+                </p>
+            </section>
+            <section class="d-none" id="menu3-info">
+                <i class="profile-selected-opt-title">Settings</i>
+                <p class="profile-selected-opt-description">
+                Manage your profile settings and preferences
+                </p>
+            </section>
           </div>
         </div>
       </div>
@@ -133,10 +147,64 @@
           </div>
           <!-- CONTENT -->
           <div class="profile-content col row justify-content-center" id="profile-content">
-            <div class="menu-toggler-sp" id="menu-toggler-sp" onclick="toggleMenu()">
-              menu
-              <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
-            </div>
+                <div class="menu-toggler-sp" id="menu-toggler-sp" onclick="toggleMenu()">
+                menu
+                <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
+                </div>
+                <!-- items for menu 1 -->
+                <div class="col row justify-content-center" id="menu1-content">
+                    <div class="service-card">
+                        <div class="service-category">
+                            <i class="service-category-img fas fa-code"></i>
+                            <h4 class="service-category-title">Programming</h4>
+                        </div>
+                        <h4 class="service-card-title text-center">Service 1</h4>
+                        <p class="service-card-customer">customer</p>
+                        <p class="service-card-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="service-status">
+                            <i class="service-status-label">Service Status: </i>
+                            <i class="fas fa-clock"> pending</i>
+                        </p>
+                    </div>
+                </div>
+                <!-- items for menu2 -->
+                <div class="col row justify-content-center d-none" id="menu2-content">
+                    <div class="service-card">
+                        <div class="service-category">
+                            <i class="service-category-img fas fa-code"></i>
+                            <h4 class="service-category-title">Programming</h4>
+                        </div>
+                        <h4 class="service-card-title text-center">Service 1</h4>
+                        <p class="service-card-customer">customer</p>
+                        <p class="service-card-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="service-status">
+                            <i class="service-status-label">Service Status: </i>
+                            <i class="fas fa-clock"> pending</i>
+                        </p>
+                    </div>
+                </div>
+                <!-- items for menu3 -->
+                <div class="col row justify-content-center d-none" id="menu3-content">
+                    <div class="service-card">
+                        <div class="service-category">
+                            <i class="service-category-img fas fa-code"></i>
+                            <h4 class="service-category-title">Programming</h4>
+                        </div>
+                        <h4 class="service-card-title text-center">Service 1</h4>
+                        <p class="service-card-customer">customer</p>
+                        <p class="service-card-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <p class="service-status">
+                            <i class="service-status-label">Service Status: </i>
+                            <i class="fas fa-clock"> pending</i>
+                        </p>
+                    </div>
+                </div>
           </div>
         </div>
       </div>

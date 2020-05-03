@@ -3,7 +3,7 @@
   --category-card-content-color: #0f0f0f;
   --service-card-bg-color: #eeeeee;
   --service-card-img-bg-color: #b9a8a8;
-  --service-owner-color: rgb(224, 3, 3);
+  --service-freelancer-color: rgb(224, 3, 3);
   --service-card-rating-color: #daa520;
   --card-shadow-color: rgba(0, 0, 0, 0.2);
   --service-review-count-color: rgb(117, 117, 117);
@@ -91,7 +91,7 @@
 }
 
 .service-card-freelancer {
-  color: var(--service-owner-color);
+  color: var(--service-freelancer-color);
   float: left;
 }
 

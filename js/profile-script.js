@@ -69,7 +69,7 @@ function toggleMenu(){
 
 function toggleMenuSelectedP(menuSelected){
     //i is the number of menu items customer can see, most likely fixed to 2 menu items
-    for(i=1; i<3; i++)
+    for(i=1; i<=2; i++)
         $('#menu'+i).removeClass('profile-menu-item-selected');
     $('#'+menuSelected).addClass('profile-menu-item-selected');
     getContentP(menuSelected);
@@ -77,7 +77,7 @@ function toggleMenuSelectedP(menuSelected){
 
 function toggleMenuSelectedFP(menuSelected){
     //i needs to be the number of services that freelancer has so figure it out
-    for(i=1; i<4; i++)
+    for(i=1; i<=3; i++)
         $('#menu'+i).removeClass('profile-menu-item-selected');
     $('#'+menuSelected).addClass('profile-menu-item-selected');
     getContentFP(menuSelected);
@@ -85,9 +85,14 @@ function toggleMenuSelectedFP(menuSelected){
 
 function toggleMenuSelectedPFP(menuSelected){
     //i is the number of menu items freelancer can see, most likely fixed to 3 menu items
-    for(i=1; i<4; i++)
+    for(i=1; i<=3; i++){
         $('#menu'+i).removeClass('profile-menu-item-selected');
+        $('#menu'+i+'-content').addClass('d-none');
+        $('#menu'+i+'-info').addClass('d-none');
+    }
     $('#'+menuSelected).addClass('profile-menu-item-selected');
+    $('#'+menuSelected+'-content').removeClass('d-none');
+    $('#'+menuSelected+'-info').removeClass('d-none');
     getContentPFP(menuSelected);
 }
 

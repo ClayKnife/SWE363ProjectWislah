@@ -7,6 +7,9 @@
   --service-card-img-bg-color: #b9a8a8;
   --category-card-content-color: #0f0f0f;
   --service-card-bg-color: #f3f3f3;
+  --service-freelancer-color: rgb(224, 3, 3);
+  --service-customer-color: rgb(3, 99, 224);
+
   --service-status-pending: rgb(114, 88, 1);
   --service-status-accepted: rgb(16, 173, 2);
   --service-status-ongoing: rgb(3, 29, 175);
@@ -225,7 +228,13 @@
 }
 
 .service-card-freelancer {
-  float: left;
+    color: var(--service-freelancer-color);
+    float: left;
+}
+
+.service-card-customer {
+    color: var(--service-customer-color);
+    float: left;
 }
 
 .service-status-label {
