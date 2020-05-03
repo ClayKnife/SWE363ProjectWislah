@@ -6,7 +6,11 @@
   --active-element-color: #4c9fc9;
 
   --service-card-bg-color: #f3f3f3;
-  --service-status-color: rgb(18, 124, 8);
+  --service-status-pending: rgb(114, 88, 1);
+  --service-status-accepted: rgb(16, 173, 2);
+  --service-status-ongoing: rgb(3, 29, 175);
+  --service-status-completed: rgb(14, 155, 1);
+  --service-status-rejected: rgb(153, 1, 1);
   --card-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
