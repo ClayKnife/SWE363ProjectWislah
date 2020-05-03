@@ -1,10 +1,12 @@
 :root {
   --category-card-bg-color: #93b5c6;
   --category-card-content-color: #0f0f0f;
-  --service-card-bg-color: #f3f3f3;
-  --service-card-img-seperator-color: #afafaf;
+  --service-card-bg-color: #eeeeee;
+  --service-card-img-bg-color: #b9a8a8;
+  --service-owner-color: rgb(224, 3, 3);
   --service-card-rating-color: #daa520;
   --card-shadow-color: rgba(0, 0, 0, 0.2);
+  --service-review-count-color: rgb(117, 117, 117);
 }
 
 .category-card {
@@ -46,7 +48,7 @@
 .service-card {
   margin: 100px 15px;
   background-color: var(--service-card-bg-color);
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 1rem;
   max-width: 17rem;
 
@@ -58,14 +60,30 @@
   cursor: pointer;
 }
 
-.service-card-img {
-  margin-top: -100px;
-  padding-bottom: 4px;
-  width: 15rem;
-  height: 15rem;
-  background-color: var(--service-card-img-seperator-color);
-  border-bottom: 2px solid var(--service-card-img-seperator-color);
+.service-category{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -80px;
+  margin-bottom: 10px;
+  padding: auto;
+  width: 9rem;
+  height: 8rem;
+  background-color: var(--service-card-img-bg-color);
   border-radius: 5px;
+}
+
+.service-category-img{
+  color: var(--category-card-content-color);
+  font-size: 3.5rem;
+  margin-top: 25px;
+}
+
+.service-category-title{
+  color: var(--category-card-content-color);
+  font-size: 1rem;
+  font-weight: 800;
+  transition: 0.15s;
 }
 
 .service-card-title {
@@ -73,6 +91,7 @@
 }
 
 .service-card-freelancer {
+  color: var(--service-owner-color);
   float: left;
 }
 
@@ -83,8 +102,8 @@
 }
 
 .service-review-count {
-  color: #0f0f0f;
-  font-size: 0.8rem;
+  color: var(--service-review-count-color);
+  font-size: 1rem;
   font-style: normal;
 }
 
