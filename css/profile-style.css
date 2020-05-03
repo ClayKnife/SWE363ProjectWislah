@@ -4,7 +4,8 @@
   --profile-bg-color: #ffffff;
   --active-element-bg-color: #93b5c6;
   --active-element-color: #4c9fc9;
-
+  --service-card-img-bg-color: #b9a8a8;
+  --category-card-content-color: #0f0f0f;
   --service-card-bg-color: #f3f3f3;
   --service-status-pending: rgb(114, 88, 1);
   --service-status-accepted: rgb(16, 173, 2);
@@ -175,21 +176,48 @@
     transition: 0.2s;
 }
 
-.service-card {
-  overflow: hidden;
-  margin: 25px 30px;
-  margin-bottom: 30px;
-  background-color: var(--service-card-bg-color);
-  border-radius: 20px;
-  padding: 1rem;
-  max-width: 17rem;
+.service-category{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -80px;
+    margin-bottom: 10px;
+    padding: auto;
+    width: 9rem;
+    height: 8rem;
+    background-color: var(--service-card-img-bg-color);
+    border-radius: 5px;
+}
 
-  box-shadow: 0 4px 8px 0 var(--card-shadow-color);
-  transition: 0.3s;
+.service-category-img{
+    padding-top: 45px;
+    color: var(--category-card-content-color);
+    font-size: 1.8rem;
+    margin-top: 25px;
+}
+
+.service-category-title{
+    color: var(--category-card-content-color);
+    font-size: 1rem;
+    font-weight: 800;
+    transition: 0.15s;
+}
+
+.service-card {
+    overflow: hidden;
+    margin: 25px 30px;
+    margin-bottom: 30px;
+    background-color: var(--service-card-bg-color);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 17rem;
+
+    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+    transition: 0.3s;
 }
 .service-card:hover {
-  box-shadow: 0 10px 16px 0 var(--card-shadow-color);
-  cursor: pointer;
+    box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+    cursor: pointer;
 }
 
 .service-card-title {
