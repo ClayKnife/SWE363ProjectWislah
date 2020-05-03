@@ -66,3 +66,39 @@ function toggleMenu(){
         menuHiddenSP = true;
     }
 }
+
+function toggleMenuSelectedP(menuSelected){
+    //i is the number of menu items customer can see, most likely fixed to 2 menu items
+    for(i=1; i<3; i++)
+        $('#menu'+i).removeClass('profile-menu-item-selected');
+    $('#'+menuSelected).addClass('profile-menu-item-selected');
+    getContentP(menuSelected);
+}
+
+function toggleMenuSelectedFP(menuSelected){
+    //i needs to be the number of services that freelancer has so figure it out
+    for(i=1; i<4; i++)
+        $('#menu'+i).removeClass('profile-menu-item-selected');
+    $('#'+menuSelected).addClass('profile-menu-item-selected');
+    getContentFP(menuSelected);
+}
+
+function toggleMenuSelectedPFP(menuSelected){
+    //i is the number of menu items freelancer can see, most likely fixed to 3 menu items
+    for(i=1; i<4; i++)
+        $('#menu'+i).removeClass('profile-menu-item-selected');
+    $('#'+menuSelected).addClass('profile-menu-item-selected');
+    getContentPFP(menuSelected);
+}
+
+function getContentP(menuSelected){
+    //lol
+}
+
+function getContentFP(menuSelected){
+    //lol
+}
+
+function getContentPFP(menuSelected){
+    //lol
+}
