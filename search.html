@@ -98,18 +98,16 @@
         </div>
       </nav>
     </header>
-    
+
     <!-- filters container -->
     <section class="filter-container">
       <div class="container pl-4">
         <h4 class="ml-2">Filter</h4>
       </div>
 
-      <div
-        class="container mt-3 pl-4 d-none d-sm-none d-md-flex flex-nowrap flex-stretch-0"
-      >
+      <div class="container mt-3 pl-4 d-md-flex flex-nowrap flex-stretch-0">
         <!-- delivery date -->
-        <div class="dropdown ml-2">
+        <div class="dropdown ml-2 mb-3">
           <button
             type="button"
             class="btn btn-light dropdown-toggle"
@@ -124,7 +122,7 @@
           </div>
         </div>
         <!-- category -->
-        <div class="dropdown ml-2">
+        <div class="dropdown ml-2 mb-3">
           <button
             type="button"
             class="btn btn-light dropdown-toggle"
@@ -133,25 +131,27 @@
             Category
           </button>
           <div id="category" class="dropdown-menu">
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" onclick="show('Programming')" href="#">
               <i class="fas fa-code"></i>
               Programming
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" onclick="show('Designing')" href="#">
               <i class="fas fa-paint-brush"></i>
               Designing
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" onclick="show('Music')" href="#">
               <i class="fas fa-music"></i>
               Music
             </a>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" onclick="show('Marketing')" href="#">
               <i class="fas fa-poll"></i>
-              Marketing</a>
-            <a class="dropdown-item" href="#">
+              Marketing</a
+            >
+            <a class="dropdown-item" onclick="show('Social Media')" href="#">
               <i class="fas fa-hashtag"></i>
-              Social Media</a>
-            <a class="dropdown-item" href="#">
+              Social Media</a
+            >
+            <a class="dropdown-item" onclick="show('Branding')" href="#">
               <i class="fas fa-copyright"></i>
               Branding
             </a>
@@ -198,58 +198,7 @@
 
     <!-- services container -->
     <div class="container justify-content-start mt-3 d-flex flex-wrap">
-      <div class="row justify-content-center">
-        <div class="service-card">
-          <div class="service-category">
-            <i class="service-category-img fas fa-code"></i>
-            <h4 class="service-category-title">Programming</h4>
-          </div>
-          <h4 class="service-card-title text-center">C# project</h4>
-          <p class="service-card-freelancer">Khalid Shabloota</p>
-          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
-        </div>
-        <div class="service-card">
-          <div class="service-category">
-            <i class="service-category-img fas fa-code"></i>
-            <h4 class="service-category-title">Programming</h4>
-          </div>
-          <h4 class="service-card-title text-center">C# project</h4>
-          <p class="service-card-freelancer">Khalid Shabloota</p>
-          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
-        </div>
-        <div class="service-card">
-          <div class="service-category">
-            <i class="service-category-img fas fa-code"></i>
-            <h4 class="service-category-title">Programming</h4>
-          </div>
-          <h4 class="service-card-title text-center">C# project</h4>
-          <p class="service-card-freelancer">Khalid Shabloota</p>
-          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
-        </div>
-        <div class="service-card">
-          <div class="service-category">
-            <i class="service-category-img fas fa-code"></i>
-            <h4 class="service-category-title">Programming</h4>
-          </div>
-          <h4 class="service-card-title text-center">C# project</h4>
-          <p class="service-card-freelancer">Khalid Shabloota</p>
-          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
-        </div>
-        <div class="service-card">
-          <div class="service-category">
-            <i class="service-category-img fas fa-code"></i>
-            <h4 class="service-category-title">Programming</h4>
-          </div>
-          <h4 class="service-card-title text-center">C# project</h4>
-          <p class="service-card-freelancer">Khalid Shabloota</p>
-          <p class="service-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <p class="service-card-rating"><i class="fas fa-star"> 4</i> <text class="service-review-count">(33)</text></p>
-        </div>
-      </div>
+      <div class="row justify-content-center" id="serviceContainer"></div>
     </div>
 
     <!-- Footer -->
