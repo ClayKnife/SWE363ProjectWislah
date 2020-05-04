@@ -39,18 +39,17 @@ function hideUnselected(val) {
 // Creating the categories with icons
 // constructor
 function category(id, icon, name) {
-  (this.id = id), (this.icon = icon), (this.name = name);
+  (this.id = id), (this.icon = icon);
 }
 
 // initialize the categories
 // REPLACE WITH REAL DATABASE
 let categories = [
-  new category(1, "code", "Programming"),
-  new category(2, "paint-brush", "Designing"),
-  new category(3, "music", "Music"),
-  new category(4, "poll", "Marketing"),
-  new category(5, "hashtag", "Social Media"),
-  new category(6, "copyright", "Branding"),
+  new category(1, "code"),
+  new category(2, "paint-brush"),
+  new category(3, "music"),
+  new category(4, "poll"),
+  new category(5, "hashtag"),
 ];
 
 // Creating Services
@@ -74,7 +73,7 @@ function service(
   (this.description = description), (this.category_id = category_id);
 }
 
-// create the services
+//create the services
 let services = [
   new service(
     // Service ID
@@ -198,6 +197,24 @@ function createServices() {
   return rowArray;
 }
 
+function getServiceCard(id, category_id, title, freelancer_id, description, starRating) {
+  return ` <div class="service-card" id="${id}">
+  <div class="service-category">
+    <i class="service-category-img fas fa-${category_id[0]}"></i>
+    <h4 class="service-category-title">${category_id[1]}</h4>
+  </div>
+  <h4 class="service-card-title text-center">${title}</h4>
+  <p class="service-card-freelancer">${freelancer_id}</p>
+  <p class="service-card-description">
+    ${description}
+  </p>
+  <p class="service-card-rating">
+    <i class="fas fa-star"> ${starRating}</i>
+  </p>
+</div>
+      `;
+}
+
 function refineService() {
   let refiningServices = [];
 
@@ -231,7 +248,6 @@ function findCategory(target) {
 // Add services to html
 $(document).ready(function () {
   let rows = createServices();
-  for (let index = 0; index < rows.length; index++) {
-    $("#serviceContainer").append(rows[index]);
-  }
+    $("#serviceContainer").append(rows);
+
 });

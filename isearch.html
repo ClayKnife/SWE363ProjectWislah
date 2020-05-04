@@ -2,36 +2,38 @@
 <html lang="en">
   <head>
     <link rel="icon" href="images/favicon.ico">
-    <!-- Bootstrap CSS -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+            shrink-to-fit=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/19a3b3f623.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/19a3b3f623.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- our Sen font | use ( font-family: 'Sen', sans-serif; ), font-weight: (either 400 or 800) -->
     <link
       href="https://fonts.googleapis.com/css?family=Sen:400,800&display=swap"
       rel="stylesheet"
     />
-    <!-- our styling file -->
     <link rel="stylesheet" href="css/shared-style.css" />
-    <link rel="stylesheet" href="css/sign-up-style.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <link rel="stylesheet" href="css/index-style.css" />
+    <link rel="stylesheet" href="css/search-style.css" />
+    <title>Search</title>
   </head>
+
   <body>
     <!-- NAVBAR AND SEARCH -->
     <header id="navbar" class="container-fluid sticky-top">
       <nav class="navbar navbar-expand-sm pl-5 pr-5">
         <a class="wislah-brand navbar-brand" href="index.html">WISLAH</a>
-
         <button
           class="navbar-toggler"
           style="outline: none;"
@@ -68,13 +70,11 @@
                 href="#"
                 data-toggle="modal"
                 data-target="#sign-in-modal"
-                >Sign-in</a
+                >Sign in</a
               >
             </li>
             <li class="nav-item my-auto" style="font-size: 1.2rem;">
-              <a class="wislah-nav-item nav-link" href="sign-up.html"
-                >Sign-up</a
-              >
+              <a class="wislah-nav-item nav-link" href="#">Sign up</a>
             </li>
             <li class="nav-item dropdown my-auto" style="font-size: 2.5rem;">
               <a
@@ -92,7 +92,7 @@
               >
                 <a class="dropdown-item" href="profile.html">My Profile</a>
                 <a class="dropdown-item" href="#">My Orders</a>
-                <a class="dropdown-item" href="#">His Orders</a>
+                <a class="dropdown-item" href="#">Orders</a>
               </div>
             </li>
           </ul>
@@ -100,128 +100,106 @@
       </nav>
     </header>
 
-    <div class="container-sm sign-up-holder">
-      <h2 class="display-5 text-center">Sign up as a customer</h2>
-      <br /><br />
-      <form action="" method="post">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <label class="sign-up-label" for="name"
-              >Name <br />
-              <input
-                class="sign-up-input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your Name"
-              />
-            </label>
-            <label class="sign-up-label" for="name"
-              >Username <br />
-              <input
-                class="sign-up-input"
-                type="text"
-                name="username"
-                id="username"
-                placeholder="Your Username"
-              />
-            </label>
-            <br />
-            <label class="sign-up-label" for="email"
-              >Email <br />
-              <input
-                class="sign-up-input"
-                type="email"
-                name="email"
-                id="email"
-                placeholder="example@domain.com"
-              />
-            </label>
-            <br />
-            <label class="sign-up-label" for="email2">
-              <input
-                class="sign-up-input"
-                type="email"
-                name="email2"
-                id="email2"
-                placeholder="confirm email"
-              />
-            </label>
-            <br />
-            <label class="sign-up-label" for="pwd"
-              >Password <br />
-              <input
-                class="sign-up-input"
-                type="password"
-                name="pwd"
-                id="pwd"
-                placeholder="enter your password"
-              />
-            </label>
-            <br />
-            <label class="sign-up-label" for="pwd2">
-              <input
-                class="sign-up-input"
-                type="password"
-                name="pwd2"
-                id="pwd2"
-                placeholder="confirm password"
-              />
-            </label>
-            <br /><br />
+    <!-- filters container -->
+    <section class="filter-container">
+      <div class="container pl-4">
+        <h4 class="ml-2">Filter</h4>
+      </div>
+
+      <div class="container mt-3 pl-4 d-md-flex flex-nowrap flex-stretch-0">
+        <!-- delivery date -->
+        <div class="dropdown ml-2 mb-3">
+          <button
+            type="button"
+            class="btn btn-light dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Delivery Date
+          </button>
+          <div id="d-date" class="dropdown-menu">
+            <a class="dropdown-item" href="#">3-5 Days</a>
+            <a class="dropdown-item" href="#">1 Week</a>
+            <a class="dropdown-item" href="#">2 Weeks</a>
           </div>
-          <div class="col-12 col-md-6">
-            <label class="sign-up-label" for="gender"
-              >Gender <br />
-              <label for="m">
-                <input class="checkable" type="radio" name="gender" id="m" value="0"/>
-                male
-              </label>
-              <label for="f"
-                ><input class="checkable" type="radio" name="gender" id="f" value="1"/>
-                female</label
-              >
-              <label for="o">
-                <input class="checkable" type="radio" name="gender" id="o" value="2"/>
-                other
-              </label>
-            </label>
-            <br /><br />
-            <label class="sign-up-label" for="birthdate"
-              >Birthdate <br />
-              <input
-                class="sign-up-input"
-                type="date"
-                name="birthdate"
-                id="birthdate"
-              />
-            </label>
-            <br /><br />
-            <label class="sign-up-label" for="phonenum"
-              >Phone number <br />
-              <input
-                class="sign-up-input"
-                type="tel"
-                name="phonenum"
-                id="phonenum"
-              />
-            </label>
-            <br /><br />
-          </div>
-          <div class="center">
-            <input
-              class="checkable"
-              type="checkbox"
-              name="freelancer-check"
-              id="freelancer-check"
-              value="t"
-            />
-            <span>Become a Freelancer as well!</span>
-          </div>
-          <br /><br />
-          <button class="sign-up-btn" type="button" onclick="handleSignup()">SUBMIT</button>
         </div>
-      </form>
+        <!-- category -->
+        <div class="dropdown ml-2 mb-3">
+          <button
+            type="button"
+            class="btn btn-light dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Category
+          </button>
+          <div id="category" class="dropdown-menu">
+            <a class="dropdown-item" onclick="show('Programming')" href="#">
+              <i class="fas fa-code"></i>
+              Programming
+            </a>
+            <a class="dropdown-item" onclick="show('Designing')" href="#">
+              <i class="fas fa-paint-brush"></i>
+              Designing
+            </a>
+            <a class="dropdown-item" onclick="show('Music')" href="#">
+              <i class="fas fa-music"></i>
+              Music
+            </a>
+            <a class="dropdown-item" onclick="show('Marketing')" href="#">
+              <i class="fas fa-poll"></i>
+              Marketing</a
+            >
+            <a class="dropdown-item" onclick="show('Social Media')" href="#">
+              <i class="fas fa-hashtag"></i>
+              Social Media</a
+            >
+            <a class="dropdown-item" onclick="show('Branding')" href="#">
+              <i class="fas fa-copyright"></i>
+              Branding
+            </a>
+          </div>
+        </div>
+        <!-- price range -->
+        <div class="d-flex ml-4">
+          <h5>Price Range</h5>
+          <label class="sr-only" for="inlineFormInputGroupUsername2">min</label>
+          <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Min"
+            />
+          </div>
+
+          <label class="sr-only" for="inlineFormInputGroupUsername2">Max</label>
+          <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Max"
+            />
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-dark"
+          style="max-height: 38px; background-color: #0e1d32;"
+        >
+          Apply
+        </button>
+      </div>
+    </section>
+
+    <!-- services container -->
+    <div class="container justify-content-start mt-3 d-flex flex-wrap">
+      <div class="row justify-content-center" id="serviceContainer"></div>
     </div>
 
     <!-- Footer -->
@@ -265,7 +243,11 @@
     </footer>
 
     <!-- Javascript files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -276,8 +258,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/auth.js"></script>
-    <!-- OUR OWN JS FILES -->
     <script src="js/shared-style-script.js"></script>
+    <script src="js/search-script.js"></script>
   </body>
 </html>
