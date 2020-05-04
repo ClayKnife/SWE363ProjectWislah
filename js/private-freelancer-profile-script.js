@@ -1,5 +1,6 @@
 var selectedCard = ""; //this variable changes based on which card is selected to change status of, contains element's ID
 var menuHiddenSP = true;
+var packageCount = 1;
 
 window.onload = function(){
     if(window.innerWidth <= 991){
@@ -99,9 +100,23 @@ function toggleSelectedCard(cardSelected){
 
 function setStatus(status){
     if(selectedCard==""){
-
+        alert("You did not select a card!");
     }
     else{
         //do something with the status variable and selected card variable
     }
+}
+
+function addPackage(){
+    /*
+    id names are as follows (all information that you need)
+    package-(number)-name: to get the name of the package
+    package-(number)-desc: to get the description of the package
+    package-(number)-price: to get the price of the package
+    */
+    packageCount++;
+    let packageHeader='<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="package-'+packageCount+'-tab" data-toggle="tab" href="#package-'+packageCount+'" role="tab" aria-controls="package-'+packageCount+' aria-selected="false"><input type="text" class="create-service-package-name" name="package-'+packageCount+'-name" id="package-'+packageCount+'-name" value="Standard" required></a></li>';
+    $(packageHeader).appendTo('#myTab');
+    let packageContent='<div class="tab-pane fade" id="package-'+packageCount+'" role="tabpanel" aria-labelledby="package-'+packageCount+'-tab"><textarea id="package-'+packageCount+'-description" required maxlength="100" rows="3" cols="28"></textarea><div class="input-group mb-2 mr-sm-2" style="width: 120px;"><div class="input-group-prepend"><div class="input-group-text">$</div></div><input type="number" class="form-control" id="package-'+packageCount+'-price" placeholder="Price" required/></div></div>';
+    $(packageContent).appendTo('#package-tabs');
 }

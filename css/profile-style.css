@@ -313,3 +313,63 @@
 .rejected{
   color: var(--service-status-rejected);
 }
+
+/* for service creation */
+form{
+  min-width: 70%;
+}
+
+.create-service-title{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.create-service-label{
+  text-align: left;
+}
+
+#service-name{
+  border: 2px solid var(--category-card-content-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+textarea{
+  border: 2px solid var(--category-card-content-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.create-service-package-name{
+  width: 100px;
+  border: 2px solid var(--category-card-content-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.tab-pane{
+  padding: 20px 10px;
+}
+
+.package-button{
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.package-button:hover{
+  background-color: var(--active-element-bg-color);
+  transition: 0.3s;
+}
+
+.submit-button{
+  margin: 10px 0px;
+  margin-left: 45%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.submit-button:hover{
+  background-color: var(--active-element-bg-color);
+  transition: 0.3s;
+}
