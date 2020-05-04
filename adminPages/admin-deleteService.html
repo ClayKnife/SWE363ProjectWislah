@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+               shrink-to-fit=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/19a3b3f623.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen:400,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../css/shared-style.css" />
+    <link rel="stylesheet" href="../css/index-style.css" />
+    <link rel="stylesheet" href="../css/admin-style.css" />
+
+    <!-- JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link Javascript -->
+    <script src="../js/admin-deleteService-script.js"></script>
+
+    <title>Wislah - Users</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR AND SEARCH -->
+    <header id="navbar" class="container-fluid sticky-top">
+      <nav class="navbar navbar-expand-sm pl-5 pr-5">
+        <a class="wislah-brand navbar-brand" href="../admin-home.html"
+          >WISLAH</a
+        >
+        <button
+          class="navbar-toggler"
+          style="outline: none;"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fas fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a class="wislah-nav-item nav-link" href="../admin-home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a class="wislah-nav-item nav-link" href="admin-reports.html"
+                >Reports</a
+              >
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a class="wislah-nav-item nav-link" href="admin-viewStaff.html"
+                >Staff</a
+              >
+            </li>
+            <li class="nav-item my-auto" style="font-size: 1.2rem;">
+              <a
+                class="wislah-nav-item nav-link"
+                href="admin-userManagement.html"
+                >Users</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Body -->
+    <div class="container mt-4 justify-content-center">
+      <!-- Search Bar -->
+      <input
+        class="form-control mx-auto w-75"
+        type="search"
+        id="serviceName"
+        placeholder="Enter Service Name"
+        aria-label="Search"
+      />
+
+      <div class="container justify-content-center table-responsive mt-5">
+        <table class="table table-striped text-center">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Service Name</th>
+              <th scope="col">User</th>
+              <th scope="col">Description</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
