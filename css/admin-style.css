@@ -1,0 +1,56 @@
+/* when mobile */
+@media only screen and (min-width: 401px) {
+  /* the search-bar takes 80% of screen */
+  input {
+    width: 80%;
+  }
+}
+
+:root {
+  --sign-up-border-color: #000;
+  --sign-up-bg-color: #fff;
+
+  --input-border-color: #e1c699;
+  --input-bg-color: #f4f4f4;
+  --input-focus-border-color: #93b5c6;
+  --input-focus-bg-color: #fefefe;
+  --input-text-color: #e03616;
+}
+
+.navButton {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--input-border-color);
+  color: var(--input-focus-border-color);
+  font-weight: 800;
+  font-size: 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+.navButton:hover {
+  background-color: var(--input-focus-border-color);
+  color: var(--input-text-color);
+  transition: 0.35s ease-in-out;
+}
+
+th {
+  border-right: 2px lightgray solid;
+}
+.tableRow:hover {
+  border: 3px solid var(--input-text-color);
+  cursor: pointer;
+}
+
+table {
+  border: 1px lightgrey solid;
+}
+
+h3 > span {
+  color: skyblue;
+}
+
+.hide {
+  display: none;
+}
