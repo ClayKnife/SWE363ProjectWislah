@@ -24,7 +24,8 @@
     />
     <link rel="stylesheet" href="css/shared-style.css" />
     <link rel="stylesheet" href="css/index-style.css" />
-    <title>Wislah</title>
+    <link rel="stylesheet" href="css/search-style.css" />
+    <title>Search</title>
   </head>
 
   <body>
@@ -74,49 +75,131 @@
             <li class="nav-item my-auto" style="font-size: 1.2rem;">
               <a class="wislah-nav-item nav-link" href="#">Sign up</a>
             </li>
+            <li class="nav-item dropdown my-auto" style="font-size: 2.5rem;">
+              <a
+                class="wislah-nav-item-icon nav-link fas fa-user-circle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              ></a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="profile.html">My Profile</a>
+                <a class="dropdown-item" href="#">My Orders</a>
+                <a class="dropdown-item" href="#">Orders</a>
+              </div>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: #93b5c6;">
-      <div class="container">
-        <h1 class="display-5">Finish it now</h1>
-        <p class="lead">
-          Wislah has
-          <span id="wordbox" class="rolling-text">programmer</span> ready to
-          help you with your
-          <span id="wordbox2" class="rolling-text">website</span>
-        </p>
-        <hr class="my-4" />
-        <h3 class="display-5">Join us, we would love to help you</h3>
-        <button type="button" class="btn btn-dark">Sign up</button>
-      </div>
-    </div>
-
-    <!-- CATEGORIES -->
-    <section id="categories-section">
+    <!-- filters container -->
+    <section class="filter-container">
       <div class="container pl-4">
-        <h4 class="ml-2">Most popular Categories</h4>
+        <h4 class="ml-2">Filter</h4>
       </div>
 
-      <div class="container">
-        <div class="row justify-content-center" id="categoriesContainer">
-          <!-- Dynamically enter categories here -->
+      <div class="container mt-3 pl-4 d-md-flex flex-nowrap flex-stretch-0">
+        <!-- delivery date -->
+        <div class="dropdown ml-2 mb-3">
+          <button
+            type="button"
+            class="btn btn-light dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Delivery Date
+          </button>
+          <div id="d-date" class="dropdown-menu">
+            <a class="dropdown-item" href="#">3-5 Days</a>
+            <a class="dropdown-item" href="#">1 Week</a>
+            <a class="dropdown-item" href="#">2 Weeks</a>
+          </div>
         </div>
+        <!-- category -->
+        <div class="dropdown ml-2 mb-3">
+          <button
+            type="button"
+            class="btn btn-light dropdown-toggle"
+            data-toggle="dropdown"
+          >
+            Category
+          </button>
+          <div id="category" class="dropdown-menu">
+            <a class="dropdown-item" onclick="show('Programming')" href="#">
+              <i class="fas fa-code"></i>
+              Programming
+            </a>
+            <a class="dropdown-item" onclick="show('Designing')" href="#">
+              <i class="fas fa-paint-brush"></i>
+              Designing
+            </a>
+            <a class="dropdown-item" onclick="show('Music')" href="#">
+              <i class="fas fa-music"></i>
+              Music
+            </a>
+            <a class="dropdown-item" onclick="show('Marketing')" href="#">
+              <i class="fas fa-poll"></i>
+              Marketing</a
+            >
+            <a class="dropdown-item" onclick="show('Social Media')" href="#">
+              <i class="fas fa-hashtag"></i>
+              Social Media</a
+            >
+            <a class="dropdown-item" onclick="show('Branding')" href="#">
+              <i class="fas fa-copyright"></i>
+              Branding
+            </a>
+          </div>
+        </div>
+        <!-- price range -->
+        <div class="d-flex ml-4">
+          <h5>Price Range</h5>
+          <label class="sr-only" for="inlineFormInputGroupUsername2">min</label>
+          <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Min"
+            />
+          </div>
+
+          <label class="sr-only" for="inlineFormInputGroupUsername2">Max</label>
+          <div class="input-group mb-2 mr-sm-2" style="width: 100px;">
+            <div class="input-group-prepend">
+              <div class="input-group-text">$</div>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              id="inlineFormInputGroupUsername2"
+              placeholder="Max"
+            />
+          </div>
+        </div>
+        <button
+          type="button"
+          class="btn btn-dark"
+          style="max-height: 38px; background-color: #0e1d32;"
+        >
+          Apply
+        </button>
       </div>
     </section>
 
-    <!-- SERVICES -->
-    <section class="services-section" id="services-section">
-      <div class="container">
-        <div class="container pl-4">
-          <h4 class="ml-2">Most popular Services</h4>
-        </div>
-        <div class="row justify-content-center" id="serviceContainer">
-      </div>
-    </section>
+    <!-- services container -->
+    <div class="container justify-content-start mt-3 d-flex flex-wrap">
+      <div class="row justify-content-center" id="serviceContainer"></div>
+    </div>
 
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
@@ -158,6 +241,7 @@
       </div>
     </footer>
 
+    <!-- Javascript files -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -173,7 +257,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="js/index-script.js"></script>
     <script src="js/shared-style-script.js"></script>
+    <script src="js/search-script.js"></script>
   </body>
 </html>

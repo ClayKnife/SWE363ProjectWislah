@@ -8,6 +8,11 @@
   --search-bar-btn-seperator-color: #aaaaaa;
 }
 
+html{
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background-color: var(--body-bg-color);
   font-family: "Sen", sans-serif;
@@ -98,6 +103,11 @@ a:hover {
 
 
 .page-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
   margin-top: 3rem;
   background-color: #2d2d2d;
   color: white;

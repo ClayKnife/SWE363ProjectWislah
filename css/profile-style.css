@@ -3,11 +3,24 @@
   --profile-secondary-border-color: #d6d5d5;
   --profile-bg-color: #ffffff;
   --active-element-bg-color: #93b5c6;
+  --active-button-bg-color: #c9ebfc;
   --active-element-color: #4c9fc9;
-
+  --service-card-img-bg-color: #b9a8a8;
+  --category-card-content-color: #0f0f0f;
   --service-card-bg-color: #f3f3f3;
-  --service-status-color: rgb(18, 124, 8);
+  --service-freelancer-color: rgb(224, 3, 3);
+  --service-customer-color: rgb(3, 99, 224);
+
+  --service-status-pending: rgb(114, 88, 1);
+  --service-status-accepted: rgb(16, 173, 2);
+  --service-status-ongoing: rgb(3, 29, 175);
+  --service-status-completed: rgb(14, 155, 1);
+  --service-status-rejected: rgb(153, 1, 1);
   --card-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+.profile-container{
+    margin-bottom: 10rem;
 }
 
 .profile-header {
@@ -22,12 +35,17 @@
 }
 
 .profile-img {
+  text-align: center;
   z-index: 1;
-  width: 175px;
-  height: 175px;
+  width: 10.9375rem;
+  height: 10.9375rem;
+  font-size: 7rem;
   border-radius: 20px;
   border: 8px solid var(--profile-bg-color);
+  background-color: var(--profile-border-color);
+  color: var(--profile-bg-color);
   margin-right: 0px;
+  padding: 1.3rem;
 }
 
 .profile-selected-opt-info {
@@ -77,6 +95,13 @@
   border-right: 2px solid rgba(0, 0, 0, 0);
   transition: 0.3s;
 }
+.profile-menu-item-selected {
+    cursor: pointer;
+    background-color: var(--active-element-bg-color);
+    border-left: 7.5px solid var(--active-element-color);
+    border-right: 7.5px solid var(--active-element-color);
+    transition: 0.3s;
+}
 .profile-menu-item:not(:last-child) {
   margin-bottom: 10px;
   transition: 0.3s;
@@ -100,20 +125,119 @@
   margin-bottom: 50px;
 }
 
-.service-card {
-  overflow: hidden;
-  margin: 25px 30px;
-  margin-bottom: 30px;
-  background-color: var(--service-card-bg-color);
-  border-radius: 20px;
-  padding: 1rem;
-  max-width: 17rem;
+/* sp stands for small profile */
+.profile-img-holder-sp {
+    background-color: var(--profile-bg-color);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -2px;
+    z-index: 1;
+    border-top: 2px solid var(--profile-border-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
-  box-shadow: 0 4px 8px 0 var(--card-shadow-color);
-  transition: 0.3s;
+.profile-selected-opt-info-sp {
+    background-color: var(--profile-bg-color);
+    border-top: 2px solid var(--profile-border-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 2px solid var(--profile-secondary-border-color);
+    margin: 0px 0px;
+    padding: 10px 20px;
+}
+
+.profile-menu-sp {
+    z-index: 1;
+    top: 200px;
+    left: 2px;
+    position: fixed;
+    overflow-x: hidden;
+    width: 140px;
+    background-color: var(--profile-bg-color);
+    border: 2px solid var(--profile-border-color);
+    border-radius: 10px;
+}
+
+.profile-content-sp {
+    z-index: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: var(--profile-bg-color);
+    border-right: 2px solid var(--profile-border-color);
+    border-left: 2px solid var(--profile-border-color);
+    border-bottom: 2px solid var(--profile-border-color);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.menu-toggler-sp{
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-right: 78%;
+    transition: 0.2s;
+}
+.menu-toggler-sp:hover{
+    cursor: pointer;
+    color: var(--active-element-color);
+    transition: 0.2s;
+}
+
+.service-category{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -80px;
+    margin-bottom: 10px;
+    padding: auto;
+    width: 9rem;
+    height: 8rem;
+    background-color: var(--service-card-img-bg-color);
+    border-radius: 5px;
+}
+
+.service-category-img{
+    padding-top: 45px;
+    color: var(--category-card-content-color);
+    font-size: 1.8rem;
+    margin-top: 25px;
+}
+
+.service-category-title{
+    color: var(--category-card-content-color);
+    font-size: 1rem;
+    font-weight: 800;
+    transition: 0.15s;
+}
+
+.service-card {
+    overflow: hidden;
+    margin: 25px 30px;
+    margin-bottom: 30px;
+    background-color: var(--service-card-bg-color);
+    border-radius: 20px;
+    padding: 1rem;
+    max-width: 17rem;
+
+    box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+    transition: 0.3s;
 }
 .service-card:hover {
-  box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+    box-shadow: 0 10px 16px 0 var(--card-shadow-color);
+    cursor: pointer;
+}
+.service-card-selected {
+  box-shadow: 0 10px 16px 0 var(--active-element-bg-color);
+  cursor: pointer;
+}
+.service-card-selected:hover {
+  box-shadow: 0 10px 16px 0 var(--active-element-bg-color);
   cursor: pointer;
 }
 
@@ -122,7 +246,13 @@
 }
 
 .service-card-freelancer {
-  float: left;
+    color: var(--service-freelancer-color);
+    float: left;
+}
+
+.service-card-customer {
+    color: var(--service-customer-color);
+    float: left;
 }
 
 .service-status-label {
@@ -132,7 +262,7 @@
 }
 
 .service-status {
-  color: var(--service-status-color);
+  /* let status color made from card creation */
   float: right;
   font-size: 1.2rem;
 }
@@ -140,4 +270,106 @@
 .service-card-description {
   clear: both;
   float: left;
+}
+
+.status-bar{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.status-button{
+  font-size: 1.2rem;
+  font-weight: 800;
+  min-width: 8rem;
+  border-radius: 5px;
+  margin: 0px 20px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+.status-button:hover{
+  background-color: var(--active-button-bg-color);
+  transition: 0.3s;
+}
+
+/* the following are the status colors */
+.pending{
+  color: var(--service-status-pending);
+}
+
+.accepted{
+  color: var(--service-status-accepted);
+}
+
+.ongoing{
+  color: var(--service-status-ongoing);
+}
+
+.completed{
+  color: var(--service-status-completed);
+}
+
+.rejected{
+  color: var(--service-status-rejected);
+}
+
+/* for service creation */
+form{
+  min-width: 70%;
+}
+
+.create-service-title{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.create-service-label{
+  text-align: left;
+}
+
+#service-name{
+  border: 2px solid var(--category-card-content-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+textarea{
+  border: 2px solid var(--category-card-content-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.create-service-package-name{
+  width: 100px;
+  border: 2px solid var(--category-card-content-color);
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.tab-pane{
+  padding: 20px 10px;
+}
+
+.package-button{
+  margin: 10px 0px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.package-button:hover{
+  background-color: var(--active-element-bg-color);
+  transition: 0.3s;
+}
+
+.submit-button{
+  margin: 10px 0px;
+  margin-left: 45%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.submit-button:hover{
+  background-color: var(--active-element-bg-color);
+  transition: 0.3s;
 }

@@ -1,0 +1,26 @@
+:root {
+  --category-card-bg-color: #93b5c6;
+  --category-card-content-color: #0f0f0f;
+  --service-card-bg-color: #f3f3f3;
+  --service-card-img-seperator-color: #afafaf;
+  --service-card-rating-color: #daa520;
+  --card-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+.filter-container {
+  margin-top: 3rem;
+}
+
+.wislah-active,
+.dropdown-item:active {
+  background-color: var(--brand-color);
+  color: #fff;
+}
+.dropdown-item:hover {
+  background-color: var(--category-card-bg-color);
+}
+
+.dropdown button {
+  box-shadow: 0 4px 8px 0 var(--card-shadow-color);
+  background-color: #fff !important;
+}

@@ -1,28 +1,40 @@
-const wordlist = [
-  "Programmers",
-  "Logo designers",
-  "Photographers",
-  "song writers",
-  "music composers",
-];
+$(".dropdown-item").click(function (e) {
+  if ($(e.target).hasClass("wislah-active")) {
+    $(e.target).removeClass("wislah-active");
+  } else {
+    $(e.target).siblings(".wislah-active").removeClass("wislah-active");
+    $(e.target).addClass("wislah-active");
+  }
+});
 
-const wordlist2 = [
-  "Website Project",
-  "Start up Branding",
-  "photoshoots",
-  "music",
-  "music",
-];
-
-function rollText() {
-  let wordbox = $("#wordbox");
-  let wordbox2 = $("#wordbox2");
-  let index = Math.floor(Math.random() * wordlist.length);
-  wordbox.text(wordlist[index]);
-  wordbox2.text(wordlist2[index]);
+// this shows the categories due to filter
+function show(element) {
+  for (let i = 0; i < refinedServices.length; i++) {
+    // check if word matches letters
+    if (
+      refinedServices[i].category_id[1]
+        .toLowerCase()
+        .indexOf(element.toLowerCase()) > -1
+    ) {
+      // add results to array
+      showSelect(refinedServices[i].id);
+    } else {
+      hideUnselected(refinedServices[i].id);
+    }
+  }
 }
 
-$(setInterval(rollText, 2000));
+//Show selects
+function showSelect(val) {
+  if ($("#" + val).hasClass("d-none")) $("#" + val).removeClass("d-none");
+}
+//hide unselected
+function hideUnselected(val) {
+  console.log(val);
+  if (!$("#" + val).hasClass("d-none")) {
+    $("#" + val).addClass("d-none");
+  }
+}
 
 // Creating the categories with icons
 // constructor
@@ -40,27 +52,6 @@ let categories = [
   new category(5, "hashtag", "Social Media"),
   new category(6, "copyright", "Branding"),
 ];
-
-// Create Categories HTML
-function createCategories() {
-  let rowArray = [];
-  for (let i = 0; i < categories.length; i++) {
-    rowArray[i] = ` <div class="category-card text-center">
-    <i class="category-card-img fas fa-${categories[i].icon}"></i>
-    <h4 class="category-card-title">${categories[i].icon}</h4>
-  </div>
-      `;
-  }
-  return rowArray;
-}
-
-// Add the categories to html
-$(document).ready(function () {
-  let rows = createCategories();
-  for (let index = 0; index < rows.length; index++) {
-    $("#categoriesContainer").append(rows[index]);
-  }
-});
 
 // Creating Services
 // service constructor
@@ -177,31 +168,32 @@ let users = [
     "other",
     3
   ),
-  new user(69, "xX_yesmate", "Khalid", "Shalboota", "01/10/1001", "other", 2),
+  new user(69, "xX_ye`smate", "Khalid", "Shalboota", "01/10/1001", "other", 2),
 ];
 
+var refinedServices;
 // Create Services HTML code
 function createServices() {
-  let refinedServices = refineService();
+  refinedServices = refineService();
   console.log(refinedServices);
   let rowArray = [];
   for (let i = 0; i < refinedServices.length; i++) {
-    rowArray[i] = ` <div class="service-card">
-    <div class="service-category">
-      <i class="service-category-img fas fa-${refinedServices[i].category_id[0]}"></i>
-      <h4 class="service-category-title">${refinedServices[i].category_id[1]}</h4>
+    rowArray[i] = ` <div class="service-card" id="${refinedServices[i].id}">
+      <div class="service-category">
+        <i class="service-category-img fas fa-${refinedServices[i].category_id[0]}"></i>
+        <h4 class="service-category-title">${refinedServices[i].category_id[1]}</h4>
+      </div>
+      <h4 class="service-card-title text-center">${refinedServices[i].title}</h4>
+      <p class="service-card-freelancer">${refinedServices[i].freelancer_id}</p>
+      <p class="service-card-description">
+        ${refinedServices[i].description}
+      </p>
+      <p class="service-card-rating">
+        <i class="fas fa-star"> ${refinedServices[i].starRating}</i>
+        <text class="service-review-count">(${refinedServices[i].rates})</text>
+      </p>
     </div>
-    <h4 class="service-card-title text-center">${refinedServices[i].title}</h4>
-    <p class="service-card-freelancer">${refinedServices[i].freelancer_id}</p>
-    <p class="service-card-description">
-      ${refinedServices[i].description}
-    </p>
-    <p class="service-card-rating">
-      <i class="fas fa-star"> ${refinedServices[i].starRating}</i>
-      <text class="service-review-count">(${refinedServices[i].rates})</text>
-    </p>
-  </div>
-        `;
+          `;
   }
   return rowArray;
 }
@@ -211,7 +203,7 @@ function refineService() {
 
   for (let j = 0; j < services.length; j++) {
     refiningServices[j] = new service(
-      0,
+      services[j].id,
       findFreelancer(services[j].freelancer_id),
       services[j].title,
       services[j].views,
