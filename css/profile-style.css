@@ -373,3 +373,29 @@ textarea{
   background-color: var(--active-element-bg-color);
   transition: 0.3s;
 }
+
+.settings-holder{
+  margin: 10% 20%;
+}
+
+.settings-text{
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.settings-text[readonly]{
+  background-color: rgb(202, 201, 201);
+}
+
+#update-button{
+  font-size: 1.2rem;
+  background-color: var(--active-button-bg-color);
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+#update-button:hover{
+  background-color: var(--active-element-bg-color);
+  transition: 0.3s;
+}

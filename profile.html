@@ -136,7 +136,7 @@
               <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
             </div>
             <!-- MENU1 CONTENT -->
-            <section class="col row justify-content-center" id="menu1-content">
+            <section class="col row justify-content-center d-none" id="menu1-content">
               <div class="service-card" id="service-card-1">
                 <div class="service-category">
                   <i class="service-category-img fas fa-code" id="service-card-category-img-1"></i>
@@ -153,8 +153,22 @@
                 </p>
               </div>
             </section>
+            <!-- MENU2 CONTENT -->
             <section class="col row justify-content-center d-none" id="menu2-content">
-              lol hi
+              <div class="settings-holder">
+                <label for="username"> Username: </label>
+                <br>
+                <input class="settings-text" type="text" name="username" id="username" value="xyz" readonly>
+                <br><br>
+                <label for="email">Email: </label>
+                <br>
+                <input class="settings-text type="text" name="email" id="email" value="something@domain.com" readonly>
+                <br><br>
+                <label for="public-email">Public Email: </label>
+                <br>
+                <input class="settings-text type="text" name="public-email" id="public-email" value="something@domain.com">
+                <button id="update-button">update</button>
+              </div>
             </section>
           </div>
         </div>
