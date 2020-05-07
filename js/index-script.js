@@ -165,7 +165,7 @@ function userType(id) {
 }
 // create the freelancer
 // replace this with stuff from the database
-let users = [
+let usersIndex = [
   new user(5, "asda", "mahmood", "yes", "01/10/1999", "female", 2),
   new user(8, "mm111231", "abdoooo", "asdassas", "01/10/2010", "male", 2),
   new user(
@@ -225,9 +225,9 @@ function refineService() {
 }
 
 function findFreelancer(targetID) {
-  for (let i = 0; i < users.length; i++) {
-    if (users[i].id === targetID)
-      return users[i].firstName + " " + users[i].lastName;
+  for (let i = 0; i < usersIndex.length; i++) {
+    if (usersIndex[i].id === targetID)
+      return usersIndex[i].firstName + " " + usersIndex[i].lastName;
   }
 }
 function findCategory(target) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -64,9 +64,7 @@
               </form>
             </li>
             <li class="nav-item my-auto" style="font-size: 1.2rem;">
-              <a class="wislah-nav-item nav-link" href="#"
-                >Sign out</a
-              >
+              <a class="wislah-nav-item nav-link" href="#">Sign out</a>
             </li>
             <li class="nav-item my-auto" style="font-size: 2.5rem;">
               <a
@@ -95,30 +93,33 @@
             <i class="profile-img fas fa-user d-none" id="menu3-img"></i>
             <i class="profile-img fas fa-cog d-none" id="menu4-img"></i>
           </div>
-          <div class="profile-selected-opt-info flex-grow-1" id="profile-selected-opt-info">
+          <div
+            class="profile-selected-opt-info flex-grow-1"
+            id="profile-selected-opt-info"
+          >
             <section id="menu1-info">
-                <i class="profile-selected-opt-title">Manage orders</i>
-                <p class="profile-selected-opt-description">
+              <i class="profile-selected-opt-title">Manage orders</i>
+              <p class="profile-selected-opt-description">
                 Set status of a selected order with the status bar
-                </p>
+              </p>
             </section>
             <section class="d-none" id="menu2-info">
-                <i class="profile-selected-opt-title">Create Service</i>
-                <p class="profile-selected-opt-description">
+              <i class="profile-selected-opt-title">Create Service</i>
+              <p class="profile-selected-opt-description">
                 Create a new service for customers to request from you
-                </p>
+              </p>
             </section>
             <section class="d-none" id="menu3-info">
-                <i class="profile-selected-opt-title">My Orders</i>
-                <p class="profile-selected-opt-description">
-                  Check up on your current orders
-                </p>
+              <i class="profile-selected-opt-title">My Orders</i>
+              <p class="profile-selected-opt-description">
+                Check up on your current orders
+              </p>
             </section>
             <section class="d-none" id="menu4-info">
-                <i class="profile-selected-opt-title">Settings</i>
-                <p class="profile-selected-opt-description">
+              <i class="profile-selected-opt-title">Settings</i>
+              <p class="profile-selected-opt-description">
                 Manage your profile settings and preferences
-                </p>
+              </p>
             </section>
           </div>
         </div>
@@ -129,196 +130,332 @@
           <!-- MENU -->
           <div class="profile-menu" id="profile-menu">
             <ul class="profile-menu-items text-center">
-              <li class="profile-menu-item profile-menu-item-selected" id="menu1" onclick="toggleMenuSelectedPFP('menu1')">Manage Orders</li>
-              <li class="profile-menu-item" id="menu2" onclick="toggleMenuSelectedPFP('menu2')">Create Service</li>
-              <li class="profile-menu-item" id="menu3" onclick="toggleMenuSelectedPFP('menu3')">My Orders</li>
-              <li class="profile-menu-item" id="menu4" onclick="toggleMenuSelectedPFP('menu4')">Settings</li>
+              <li
+                class="profile-menu-item profile-menu-item-selected"
+                id="menu1"
+                onclick="toggleMenuSelectedPFP('menu1')"
+              >
+                Manage Orders
+              </li>
+              <li
+                class="profile-menu-item"
+                id="menu2"
+                onclick="toggleMenuSelectedPFP('menu2')"
+              >
+                Create Service
+              </li>
+              <li
+                class="profile-menu-item"
+                id="menu3"
+                onclick="toggleMenuSelectedPFP('menu3')"
+              >
+                My Orders
+              </li>
+              <li
+                class="profile-menu-item"
+                id="menu4"
+                onclick="toggleMenuSelectedPFP('menu4')"
+              >
+                Settings
+              </li>
             </ul>
           </div>
           <!-- CONTENT -->
-          <div class="profile-content col row justify-content-center" id="profile-content">
-                <div class="menu-toggler-sp" id="menu-toggler-sp" onclick="toggleMenu()">
-                menu
-                <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
+          <div
+            class="profile-content col row justify-content-center"
+            id="profile-content"
+          >
+            <div
+              class="menu-toggler-sp"
+              id="menu-toggler-sp"
+              onclick="toggleMenu()"
+            >
+              menu
+              <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
+            </div>
+            <!-- content for menu 1 -->
+            <div class="col row justify-content-center" id="menu1-content">
+              <div class="status-bar">
+                <button class="status-button">
+                  <i
+                    class="fas fa-plus accepted"
+                    id="menu-toggler-icon"
+                    onclick="setStatus('accepted')"
+                  >
+                    Accept</i
+                  >
+                </button>
+                <button class="status-button">
+                  <i
+                    class="fas fa-recycle ongoing"
+                    id="menu-toggler-icon"
+                    onclick="setStatus('ongoing')"
+                  >
+                    Ongoing</i
+                  >
+                </button>
+                <button class="status-button">
+                  <i
+                    class="fas fa-check completed"
+                    id="menu-toggler-icon"
+                    onclick="setStatus('completed')"
+                  >
+                    Completed</i
+                  >
+                </button>
+                <button class="status-button">
+                  <i
+                    class="fas fa-times rejected"
+                    id="menu-toggler-icon"
+                    onclick="setStatus('rejected')"
+                  >
+                    Rejected</i
+                  >
+                </button>
+              </div>
+              <div
+                class="service-card"
+                id="card1"
+                onclick="toggleSelectedCard('card1')"
+              >
+                <div class="service-category">
+                  <i class="service-category-img fas fa-code"></i>
+                  <h4 class="service-category-title">Programming</h4>
                 </div>
-                <!-- content for menu 1 -->
-                <div class="col row justify-content-center" id="menu1-content">
-                    <div class="status-bar">
-                        <button class="status-button">
-                            <i class="fas fa-plus accepted" id="menu-toggler-icon" onclick="setStatus('accepted')"> Accept</i>
-                        </button>
-                        <button class="status-button">
-                            <i class="fas fa-recycle ongoing" id="menu-toggler-icon" onclick="setStatus('ongoing')"> Ongoing</i>
-                        </button>
-                        <button class="status-button">
-                            <i class="fas fa-check completed" id="menu-toggler-icon" onclick="setStatus('completed')"> Completed</i>
-                        </button>
-                        <button class="status-button">
-                            <i class="fas fa-times rejected" id="menu-toggler-icon" onclick="setStatus('rejected')"> Rejected</i>
-                        </button>
-                    </div>
-                    <div class="service-card" id="card1" onclick="toggleSelectedCard('card1')">
-                        <div class="service-category">
-                            <i class="service-category-img fas fa-code"></i>
-                            <h4 class="service-category-title">Programming</h4>
-                        </div>
-                        <h4 class="service-card-title text-center">Service 1</h4>
-                        <p class="service-card-customer">customer <br>contact details</p>
-                        <p class="service-card-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <p class="service-status">
-                            <i class="service-status-label">Service Status: </i>
-                            <i class="fas fa-clock"> pending</i>
-                        </p>
-                    </div>
-                </div>
-                <!-- content for menu2 -->
-                <div class="col row justify-content-center d-none" id="menu2-content">
-                    <form action="">
-                        <h2 class="create-service-title">Create New Service</h2>
-                        <label class="create-service-label" for="service-category">Set what category type is your provided service:</label>
-                        <br>
-                        <!-- category -->
-                        <div class="dropdown ml-2">
-                            <button
-                              type="button"
-                              class="btn btn-light dropdown-toggle"
-                              data-toggle="dropdown"
-                            >
-                              Category
-                            </button>
-                            <div id="service-category" class="dropdown-menu">
-                              <a class="dropdown-item" href="#">
-                                <i class="fas fa-code"></i>
-                                Programming
-                              </a>
-                              <a class="dropdown-item" href="#">
-                                <i class="fas fa-paint-brush"></i>
-                                Designing
-                              </a>
-                              <a class="dropdown-item" href="#">
-                                <i class="fas fa-music"></i>
-                                Music
-                              </a>
-                              <a class="dropdown-item" href="#">
-                                <i class="fas fa-poll"></i>
-                                Marketing</a>
-                              <a class="dropdown-item" href="#">
-                                <i class="fas fa-hashtag"></i>
-                                Social Media</a>
-                              <a class="dropdown-item" href="#">
-                                <i class="fas fa-copyright"></i>
-                                Branding
-                              </a>
-                            </div>
-                        </div>
-
-                        <label for="service-name" class="create-service-label">
-                            Give your service a name:
-                        </label>
-                        <br>
-                        <input type="text" name="service-name" id="service-name" placeholder="Your service name">
-                        <br>
-                        <label for="service-desc" class="create-service-label">Give a brief description of your service:</label>
-                        <br>
-                        <textarea name="service-desc" id="service-desc" maxlength="100" rows="3" cols="30" ></textarea>
-                        <br>
-                        <label for="package-details">Decide on your package name, description and pricing:</label>
-                        <br>
-                        <button class="package-button" onclick="addPackage()">add new package</button>
-                        <br>
-                        <ul
-                        class="nav nav-tabs flex-column flex-sm-row"
-                        id="myTab"
-                        role="tablist"
-                        >
-                        <li class="nav-item">
-                            <a
-                            class="flex-sm-fill text-sm-center nav-link active"
-                            id="package-1-tab"
-                            data-toggle="tab"
-                            href="#package-1"
-                            role="tab"
-                            aria-controls="package-1"
-                            aria-selected="true"
-                            >
-                            <input type="text" class="create-service-package-name" name="package-1-name" id="package-1-name" value="Standard" required>
-                            </a
-                            >
-                        </li>
-                        </ul>
-                        <div class="tab-content" id="package-tabs">
-                            <div
-                                class="tab-pane fade show active"
-                                id="package-1"
-                                role="tabpanel"
-                                aria-labelledby="package-1-tab"
-                            >
-                                <textarea id="package-1-description" required maxlength="100" rows="3" cols="28"></textarea>
-                                <div class="input-group mb-2 mr-sm-2" style="width: 120px;">
-                                    <div class="input-group-prepend">
-                                      <div class="input-group-text">$</div>
-                                    </div>
-                                    <input
-                                      type="number"
-                                      class="form-control"
-                                      id="package-1-price"
-                                      placeholder="Price" 
-                                      required
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <input type="submit" class="submit-button" value="Create the service!">
-                        <!-- there might be a missing div here -->
-                    </form>
-                </div>
-                <!-- content for menu3 -->
-                <section class="col row justify-content-center d-none" id="menu3-content">
-                    <div class="service-card" id="service-card-1">
-                        <div class="service-category">
-                            <i class="service-category-img fas fa-code" id="service-card-category-img-1"></i>
-                            <h4 class="service-category-title" id="service-card-category-title-1">Programming</h4>
-                        </div>
-                        <h4 class="service-card-title text-center" id="service-card-title-1">Service 1</h4>
-                        <p class="service-card-freelancer" id="service-card-freelancer-1">Freelancer</p>
-                        <p class="service-card-description" id="service-card-description-1">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <p class="service-status">
-                            <i class="service-status-label">Service Status: </i>
-                            <i class="fas fa-check" id="service-card-status-1">done</i>
-                        </p>
-                    </div>
-                </section>
-                <!-- content for menu4 -->
-                <div class="col row justify-content-center d-none" id="menu4-content">
-                  <div class="settings-holder">
-                    <div class="row">
-                      <div class="col">
-                        <label for="username"> Username: </label>
-                        <br>
-                        <input class="settings-text" type="text" name="username" id="username" value="xyz" readonly>
-                      </div>
-                      <div class="col">
-                        <label for="email">Email: </label>
-                        <br>
-                        <input class="settings-text type="text" name="email" id="email" value="something@domain.com" readonly>
-                      </div>
-                    </div>
-                    <br><br>
-                    <label for="public-email">Public Email: </label>
-                    <br>
-                    <input class="settings-text type="text" name="public-email" id="public-email" value="something@domain.com">
-                    <button id="update-button">update</button>
+                <h4 class="service-card-title text-center">Service 1</h4>
+                <p class="service-card-customer">
+                  customer <br />contact details
+                </p>
+                <p class="service-card-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="service-status">
+                  <i class="service-status-label">Service Status: </i>
+                  <i class="fas fa-clock"> pending</i>
+                </p>
+              </div>
+            </div>
+            <!-- content for menu2 -->
+            <div
+              class="col row justify-content-center d-none"
+              id="menu2-content"
+            >
+              <form action="">
+                <h2 class="create-service-title">Create New Service</h2>
+                <label class="create-service-label" for="service-category"
+                  >Set what category type is your provided service:</label
+                >
+                <br />
+                <!-- category -->
+                <div class="dropdown ml-2">
+                  <button
+                    type="button"
+                    class="btn btn-light dropdown-toggle"
+                    data-toggle="dropdown"
+                  >
+                    Category
+                  </button>
+                  <div id="service-category" class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-code"></i>
+                      Programming
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-paint-brush"></i>
+                      Designing
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-music"></i>
+                      Music
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-poll"></i>
+                      Marketing</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-hashtag"></i>
+                      Social Media</a
+                    >
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-copyright"></i>
+                      Branding
+                    </a>
                   </div>
                 </div>
+
+                <label for="service-name" class="create-service-label">
+                  Give your service a name:
+                </label>
+                <br />
+                <input
+                  type="text"
+                  name="service-name"
+                  id="service-name"
+                  placeholder="Your service name"
+                />
+                <br />
+                <label for="service-desc" class="create-service-label"
+                  >Give a brief description of your service:</label
+                >
+                <br />
+                <textarea
+                  name="service-desc"
+                  id="service-desc"
+                  maxlength="100"
+                  rows="3"
+                  cols="30"
+                ></textarea>
+                <br />
+                <label for="package-details"
+                  >Decide on your package name, description and pricing:</label
+                >
+                <br />
+                <button class="package-button" onclick="addPackage()">
+                  add new package
+                </button>
+                <br />
+                <ul
+                  class="nav nav-tabs flex-column flex-sm-row"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item">
+                    <a
+                      class="flex-sm-fill text-sm-center nav-link active"
+                      id="package-1-tab"
+                      data-toggle="tab"
+                      href="#package-1"
+                      role="tab"
+                      aria-controls="package-1"
+                      aria-selected="true"
+                    >
+                      <input
+                        type="text"
+                        class="create-service-package-name"
+                        name="package-1-name"
+                        id="package-1-name"
+                        value="Standard"
+                        required
+                      />
+                    </a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="package-tabs">
+                  <div
+                    class="tab-pane fade show active"
+                    id="package-1"
+                    role="tabpanel"
+                    aria-labelledby="package-1-tab"
+                  >
+                    <textarea
+                      id="package-1-description"
+                      required
+                      maxlength="100"
+                      rows="3"
+                      cols="28"
+                    ></textarea>
+                    <div class="input-group mb-2 mr-sm-2" style="width: 120px;">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                      </div>
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="package-1-price"
+                        placeholder="Price"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <input
+                  type="submit"
+                  class="submit-button"
+                  value="Create the service!"
+                />
+                <!-- there might be a missing div here -->
+              </form>
+            </div>
+            <!-- content for menu3 -->
+            <section
+              class="col row justify-content-center d-none"
+              id="menu3-content"
+            >
+              <div class="service-card" id="service-card-1">
+                <div class="service-category">
+                  <i
+                    class="service-category-img fas fa-code"
+                    id="service-card-category-img-1"
+                  ></i>
+                  <h4
+                    class="service-category-title"
+                    id="service-card-category-title-1"
+                  >
+                    Programming
+                  </h4>
+                </div>
+                <h4
+                  class="service-card-title text-center"
+                  id="service-card-title-1"
+                >
+                  Service 1
+                </h4>
+                <p
+                  class="service-card-freelancer"
+                  id="service-card-freelancer-1"
+                >
+                  Freelancer
+                </p>
+                <p
+                  class="service-card-description"
+                  id="service-card-description-1"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="service-status">
+                  <i class="service-status-label">Service Status: </i>
+                  <i class="fas fa-check" id="service-card-status-1">done</i>
+                </p>
+              </div>
+            </section>
+            <!-- content for menu4 -->
+            <div
+              class="col row justify-content-center d-none"
+              id="menu4-content"
+            >
+              <div class="settings-holder">
+                <div class="row">
+                  <div class="col">
+                    <label for="username"> Username: </label>
+                    <br />
+                    <input
+                      class="settings-text"
+                      type="text"
+                      name="username"
+                      id="username"
+                      value="xyz"
+                      readonly
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="email">Email: </label>
+                    <br />
+                    <input class="settings-text type="text" name="email"
+                    id="email" value="something@domain.com" readonly>
+                  </div>
+                </div>
+                <br /><br />
+                <label for="public-email">Public Email: </label>
+                <br />
+                <input class="settings-text type="text" name="public-email"
+                id="public-email" value="something@domain.com">
+                <button id="update-button">update</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="page-footer font-small blue pt-4">
@@ -363,11 +500,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/api.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -63,9 +63,7 @@
               </form>
             </li>
             <li class="nav-item my-auto" style="font-size: 1.2rem;">
-              <a class="wislah-nav-item nav-link" href="#"
-                >Sign out</a
-              >
+              <a class="wislah-nav-item nav-link" href="#">Sign out</a>
             </li>
             <li class="nav-item my-auto" style="font-size: 2.5rem;">
               <a
@@ -92,8 +90,11 @@
             <i class="profile-img fas fa-cog d-none" id="menu2-img"></i>
           </div>
           <!-- PROFILE SELECTED MENU ITEM INFO -->
-          <div class="profile-selected-opt-info flex-grow-1" id="profile-selected-opt-info">
-              <!-- MENU1 INFO -->
+          <div
+            class="profile-selected-opt-info flex-grow-1"
+            id="profile-selected-opt-info"
+          >
+            <!-- MENU1 INFO -->
             <section id="menu1-info">
               <i class="profile-selected-opt-title">My Orders</i>
               <p class="profile-selected-opt-description">
@@ -116,13 +117,32 @@
           <!-- PROFILE MENU -->
           <div class="profile-menu" id="profile-menu">
             <ul class="profile-menu-items text-center">
-              <li class="profile-menu-item profile-menu-item-selected" id="menu1" onclick="toggleMenuSelectedP('menu1')">My Orders</li>
-              <li class="profile-menu-item" id="menu2" onclick="toggleMenuSelectedP('menu2')">Settings</li>
+              <li
+                class="profile-menu-item profile-menu-item-selected"
+                id="menu1"
+                onclick="toggleMenuSelectedP('menu1')"
+              >
+                My Orders
+              </li>
+              <li
+                class="profile-menu-item"
+                id="menu2"
+                onclick="toggleMenuSelectedP('menu2')"
+              >
+                Settings
+              </li>
             </ul>
           </div>
           <!-- PROFILE CONTENT -->
-          <div class="profile-content col row justify-content-center" id="profile-content">
-            <div class="menu-toggler-sp" id="menu-toggler-sp" onclick="toggleMenu()">
+          <div
+            class="profile-content col row justify-content-center"
+            id="profile-content"
+          >
+            <div
+              class="menu-toggler-sp"
+              id="menu-toggler-sp"
+              onclick="toggleMenu()"
+            >
               menu
               <i class="fas fa-arrow-circle-right" id="menu-toggler-icon"></i>
             </div>
@@ -130,12 +150,33 @@
             <section class="col row justify-content-center" id="menu1-content">
               <div class="service-card" id="service-card-1">
                 <div class="service-category">
-                  <i class="service-category-img fas fa-code" id="service-card-category-img-1"></i>
-                  <h4 class="service-category-title" id="service-card-category-title-1">Programming</h4>
+                  <i
+                    class="service-category-img fas fa-code"
+                    id="service-card-category-img-1"
+                  ></i>
+                  <h4
+                    class="service-category-title"
+                    id="service-card-category-title-1"
+                  >
+                    Programming
+                  </h4>
                 </div>
-                <h4 class="service-card-title text-center" id="service-card-title-1">Service 1</h4>
-                <p class="service-card-freelancer" id="service-card-freelancer-1">Freelancer</p>
-                <p class="service-card-description" id="service-card-description-1">
+                <h4
+                  class="service-card-title text-center"
+                  id="service-card-title-1"
+                >
+                  Service 1
+                </h4>
+                <p
+                  class="service-card-freelancer"
+                  id="service-card-freelancer-1"
+                >
+                  Freelancer
+                </p>
+                <p
+                  class="service-card-description"
+                  id="service-card-description-1"
+                >
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
                 <p class="service-status">
@@ -145,24 +186,36 @@
               </div>
             </section>
             <!-- MENU2 CONTENT -->
-            <section class="col row justify-content-center d-none" id="menu2-content">
+            <section
+              class="col row justify-content-center d-none"
+              id="menu2-content"
+            >
               <div class="settings-holder">
                 <div class="row">
                   <div class="col">
                     <label for="username"> Username: </label>
-                    <br>
-                    <input class="settings-text" type="text" name="username" id="username" value="xyz" readonly>
+                    <br />
+                    <input
+                      class="settings-text"
+                      type="text"
+                      name="username"
+                      id="username"
+                      value="xyz"
+                      readonly
+                    />
                   </div>
                   <div class="col">
                     <label for="email">Email: </label>
-                    <br>
-                    <input class="settings-text type="text" name="email" id="email" value="something@domain.com" readonly>
+                    <br />
+                    <input class="settings-text type="text" name="email"
+                    id="email" value="something@domain.com" readonly>
                   </div>
                 </div>
-                <br><br>
+                <br /><br />
                 <label for="public-email">Public Email: </label>
-                <br>
-                <input class="settings-text type="text" name="public-email" id="public-email" value="something@domain.com">
+                <br />
+                <input class="settings-text type="text" name="public-email"
+                id="public-email" value="something@domain.com">
                 <button id="update-button">update</button>
               </div>
             </section>
@@ -213,11 +266,7 @@
 
     <!-- Javascript files -->
     <script src="./js/api.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
