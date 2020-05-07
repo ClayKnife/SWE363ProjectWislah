@@ -84,6 +84,47 @@
       </nav>
     </header>
 
+    <!-- SIGN IN FORM -->
+    <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-center" id="exampleModalLongTitle">Sign-in</h5>
+            <button type="button" class="close" data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="justify-content-center" action="">
+              <label for="#username">Username: &nbsp;</label> <input
+                class="wislah-sign-in-from" type="text" name="username"
+                id="username" placeholder="username"><br>
+              <label for="#password">Password: &nbsp; </label> <input
+                class="wislah-sign-in-from" type="password" name="password"
+                id="password" placeholder="password">
+            </form>
+            <div class="text-danger text-center d-none" id="error-msg">
+              Check input for mismatch errors!
+            </div>
+            <script>
+              $('#error-msg').removeClass('d-none');
+              document.getElementById('username').style.borderColor = 'red';
+              document.getElementById('password').style.borderColor = 'red';
+            </script>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary"
+              data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary"
+              onclick="handleSignin()">Sign-in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- filters container -->
     <section class="filter-container">
       <div class="container pl-4">

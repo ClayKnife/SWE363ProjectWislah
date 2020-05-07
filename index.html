@@ -98,6 +98,14 @@
                 class="wislah-sign-in-from" type="password" name="password"
                 id="password" placeholder="password">
             </form>
+            <div class="text-danger text-center d-none" id="error-msg">
+              Check input for mismatch errors!
+            </div>
+            <script>
+              $('#error-msg').removeClass('d-none');
+              document.getElementById('username').style.borderColor = 'red';
+              document.getElementById('password').style.borderColor = 'red';
+            </script>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary"

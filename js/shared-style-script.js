@@ -19,5 +19,10 @@ function handleSignin() {
     usertype_id = localStorage.usertype_id;
     console.log("usertype is " + usertype_id, typeof usertype_id);
     if (parseInt(usertype_id) === 1) window.location.replace("admin-home.html");
+  })
+  .catch(function(){
+    $('#error-msg').removeClass('d-none');
+    document.getElementById('username').style.borderColor = 'red';
+    document.getElementById('password').style.borderColor = 'red';
   });
 }
