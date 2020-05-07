@@ -14,7 +14,7 @@
  */
 
 
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://wislah.herokuapp.com/'
 const header = { "Authorization": 'bearer ' + token };
 /**
  * simple search function
@@ -214,4 +214,16 @@ function createService(title, description, category_id, packages){
         })
     })
 
+}
+
+function getUsers(){
+    return new Promisse((resolve, reject) => {
+        $.ajax({
+            url: baseUrl,
+            method: 'GET',
+            header: header,
+            success: (data) => resolve(data),
+            error: err => reject(err)
+        })
+    })
 }
