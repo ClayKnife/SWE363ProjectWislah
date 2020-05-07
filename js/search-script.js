@@ -245,6 +245,8 @@ function findCategory(target) {
       return [categories[i].icon, categories[i].name];
   }
 }
+
+
 // Add services to html
 $(document).ready(function () {
   let rows = createServices();
