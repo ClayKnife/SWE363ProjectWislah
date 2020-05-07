@@ -1,8 +1,24 @@
+
+/**
+ * All API functions are @async, and they all @return {Promise<object>}.
+ * @example Promises are handled by three methods
+ * @method then() called after the async call have successfuly finshed
+ * @method catch() called after if the async call fails
+ * @method finally() called after then or catch
+ * 
+ * 
+ * 
+ * @example searchServices('some query').then((data) => {// use data and write your code here})
+ * @example searchServices('some query').catch((err) => {// write your error handling code here})
+ * @example you can chain these methods searchServices('some query').then((data)=>{}).catch((err) => {})
+ */
+
+
 const baseUrl = 'http://localhost:3000'
 const header = { "Authorization": 'bearer ' + token };
 /**
  * simple search function
- * 
+ * this method can also be used to retrieve all services if you pass it an empty query.
  * @async
  * @param {String} query 
  * @returns {Promise<object>}
@@ -95,6 +111,17 @@ function signin(username, password) {
 
 
 /**
+ * clears localstorage | it will invalidate the JWT token
+ */
+function signout(){
+    window.localStorage.removeItem('token')
+    window.localStorage.removeItem('id')
+    window.localStorage.removeItem('usertype_id')
+    window.localStorage.removeItem('expiresIn')
+}
+
+
+/**
  * Gets all statistics that luqman aches for
  * 
  * @assumptions - the user is logged in
@@ -128,6 +155,7 @@ function banUser(userId) {
             url: baseUrl + '/admin' + '/ban',
             method: "POST",
             data: {id: userId},
+            contentType: 'application/json',
             header: header,
             success: (data) => resolve(data),
             error: (err) => reject(err)
@@ -135,6 +163,55 @@ function banUser(userId) {
     })
 }
 
-function createOrder(){
-    
+
+function createOrder(freelancer_id, package_id){
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: baseUrl + '/order' + '/create',
+            method: 'POST',
+            data: {pid: package_id, freelancer_id: freelancer_id},
+            contentType: 'application/json',
+            header: header,
+            success: (data) => resolve(data),
+            error: (data) => reject(data)
+        })
+    });
+}
+
+function deleteOrder(order_id){
+    return new Promise((resolve, reject) =>{
+        $.ajax({
+            url: baseUrl + '/order' + '/delete', 
+            method: 'POST',
+            data: {order_id: order_id},
+            contentType: 'application/json',
+            header: header,
+            success: (data) => resolve(data),
+            error: (data) => reject(data)
+        })
+    });
+}
+
+/**
+ * @async 
+ * 
+ *  
+ *  
+ * @param {*} category_id 
+ * @param {Array <object>} packages - this param will contain all the information about the three packages
+ * @packageObject : {description: String, price: Double/Number, title: String, service_id: integer} attribute names of package object are to abide by  
+ */
+function createService(title, description, category_id, packages){
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: baseUrl + '/order' + '/create', 
+            method: 'POST',
+            data: {title: title, description: description, category_id: category_id, packages: packages},
+            contentType: 'application/json',
+            header: header,
+            success: (data) => resolve(data),
+            error: (data) => reject(data)
+        })
+    })
+
 }
