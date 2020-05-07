@@ -14,7 +14,7 @@
  */
 
 
-const baseUrl = 'https://wislah.herokuapp.com/'
+const baseUrl = 'https://wislah.herokuapp.com'
 const header = { "Authorization": 'bearer ' + token };
 /**
  * simple search function
@@ -56,7 +56,6 @@ function signup(firstname, lastname, gender, phone, birthdate, email, username, 
         usertype_id: usertype
     };
 
-    console.log(JSON.stringify(user));
 
     return new Promise((resolve, reject) => {
         $.post({
@@ -113,7 +112,7 @@ function signin(username, password) {
 /**
  * clears localstorage | it will invalidate the JWT token
  */
-function signout(){
+function signout() {
     window.localStorage.removeItem('token')
     window.localStorage.removeItem('id')
     window.localStorage.removeItem('usertype_id')
@@ -154,7 +153,7 @@ function banUser(userId) {
         $.ajax({
             url: baseUrl + '/admin' + '/ban',
             method: "POST",
-            data: {id: userId},
+            data: JSON.stringify({ id: userId }),
             contentType: 'application/json',
             header: header,
             success: (data) => resolve(data),
@@ -164,12 +163,12 @@ function banUser(userId) {
 }
 
 
-function createOrder(freelancer_id, package_id){
+function createOrder(freelancer_id, package_id) {
     return new Promise((resolve, reject) => {
         $.ajax({
             url: baseUrl + '/order' + '/create',
             method: 'POST',
-            data: {pid: package_id, freelancer_id: freelancer_id},
+            data: JSON.stringify({ pid: package_id, freelancer_id: freelancer_id }),
             contentType: 'application/json',
             header: header,
             success: (data) => resolve(data),
@@ -178,12 +177,12 @@ function createOrder(freelancer_id, package_id){
     });
 }
 
-function deleteOrder(order_id){
-    return new Promise((resolve, reject) =>{
+function deleteOrder(order_id) {
+    return new Promise((resolve, reject) => {
         $.ajax({
-            url: baseUrl + '/order' + '/delete', 
+            url: baseUrl + '/order' + '/delete',
             method: 'POST',
-            data: {order_id: order_id},
+            data: JSON.stringify({ order_id: order_id }),
             contentType: 'application/json',
             header: header,
             success: (data) => resolve(data),
@@ -201,12 +200,12 @@ function deleteOrder(order_id){
  * @param {Array <object>} packages - this param will contain all the information about the three packages
  * @packageObject : {description: String, price: Double/Number, title: String, service_id: integer} attribute names of package object are to abide by  
  */
-function createService(title, description, category_id, packages){
+function createService(title, description, category_id, packages) {
     return new Promise((resolve, reject) => {
         $.ajax({
-            url: baseUrl + '/order' + '/create', 
+            url: baseUrl + '/order' + '/create',
             method: 'POST',
-            data: {title: title, description: description, category_id: category_id, packages: packages},
+            data: JSON.stringify({ title: title, description: description, category_id: category_id, packages: packages }),
             contentType: 'application/json',
             header: header,
             success: (data) => resolve(data),
@@ -216,7 +215,7 @@ function createService(title, description, category_id, packages){
 
 }
 
-function getUsers(){
+function getUsers() {
     return new Promisse((resolve, reject) => {
         $.ajax({
             url: baseUrl,
