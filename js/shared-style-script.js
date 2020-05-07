@@ -28,8 +28,9 @@ function handleSignin() {
 }
 
 function onProfileClick(){
+  usertype_id = localStorage.usertype_id;
   if(parseInt(usertype_id) === 3)
     window.location.replace('private-freelancer-profile.html');
   else if(parseInt(usertype_id) === 4)
-  window.location.replace('profile.html');
+    window.location.replace('profile.html');
 }
