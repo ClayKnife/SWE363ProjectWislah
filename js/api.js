@@ -156,7 +156,11 @@ function banUser(userId, isBanned) {
       method: "POST",
       data: JSON.stringify({ id: userId, isBanned: isBanned }),
       contentType: "application/json",
-      header: { Authorization: "bearer " + localStorage.token },
+      beforeSend: (request) =>
+        request.setRequestHeader(
+          "Authorization",
+          "bearer " + localStorage.token
+        ),
       success: (data) => resolve(data),
       error: (err) => reject(err),
     });
@@ -170,7 +174,11 @@ function createOrder(freelancer_id, package_id) {
       method: "POST",
       data: JSON.stringify({ pid: package_id, freelancer_id: freelancer_id }),
       contentType: "application/json",
-      header: { Authorization: "bearer " + localStorage.token },
+      beforeSend: (request) =>
+        request.setRequestHeader(
+          "Authorization",
+          "bearer " + localStorage.token
+        ),
       success: (data) => resolve(data),
       error: (data) => reject(data),
     });
@@ -184,7 +192,11 @@ function deleteOrder(order_id) {
       method: "POST",
       data: JSON.stringify({ order_id: order_id }),
       contentType: "application/json",
-      header: { Authorization: "bearer " + localStorage.token },
+      beforeSend: (request) =>
+        request.setRequestHeader(
+          "Authorization",
+          "bearer " + localStorage.token
+        ),
       success: (data) => resolve(data),
       error: (data) => reject(data),
     });

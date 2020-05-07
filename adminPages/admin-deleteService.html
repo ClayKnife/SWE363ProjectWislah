@@ -29,9 +29,8 @@
 
     <!-- JQUERY -->
     <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Link Javascript -->
-    <script src="../js/admin-deleteService-script.js"></script>
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
 
     <title>Wislah - Users</title>
   </head>
@@ -96,7 +95,8 @@
         aria-label="Search"
       />
 
-      <div class="container justify-content-center table-responsive mt-5">
+      <div class="container justify-content-center text-center table-responsive mt-5">
+        <button class="btn btn-primary mb-5 w-75"> Create A Service</button>
         <table class="table table-striped text-center">
           <thead class="thead-light">
             <tr>
@@ -104,7 +104,6 @@
               <th scope="col">Service Name</th>
               <th scope="col">User</th>
               <th scope="col">Description</th>
-              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -114,5 +113,8 @@
         </table>
       </div>
     </div>
+       <!-- Link Javascript -->
+       <script src="../js/api.js"></script>
+       <script src="../js/admin-deleteService-script.js"></script>
   </body>
 </html>

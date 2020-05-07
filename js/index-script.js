@@ -151,10 +151,10 @@ function user(id, username, firstName, lastName, birthdate, usertype_id) {
     (this.firstName = firstName),
     (this.lastName = lastName),
     (this.birthdate = birthdate),
-    (this.usertype = userType(usertype_id));
+    (this.usertype = userTypeChange(usertype_id));
 }
 
-function userType(id) {
+function userTypeChange(id) {
   if (id == 1) {
     return "Admin";
   } else if (id === 2) {

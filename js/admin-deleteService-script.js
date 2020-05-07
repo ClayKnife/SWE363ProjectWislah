@@ -1,4 +1,13 @@
-/* eslint-disable no-unused-vars */
+let allServices;
+
+// prettier-ignore
+searchServices(" ")
+  .then(e => {
+    allServices = e;
+    console.log(allServices);
+  })
+  .catch();
+
 // service constructor
 function service(id, freelancer_id, title, views, description, category_id) {
   (this.id = id),
@@ -92,8 +101,7 @@ $(document).ready(function () {
 function createRows() {
   let rowArray = [];
   for (let i = 0; i < services.length; i++) {
-    console.log("test");
-    rowArray[i] = `<tr class="tableRow clickableRow" >
+    rowArray[i] = `<tr >
     <td>
     ${services[i].category_id}
     </td>
