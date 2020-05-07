@@ -1,18 +1,28 @@
 /* eslint-disable no-unused-vars */
 // user constructor
-function user(title, username, firstName, lastName, birthdate, category_id) {
+function user(
+  title,
+  username,
+  firstName,
+  lastName,
+  birthdate,
+  category_id,
+  gender
+) {
   (this.title = title),
     (this.username = username),
     (this.firstName = firstName),
     (this.lastName = lastName),
     (this.birthdate = birthdate),
-    (this.category_id = category_id);
+    (this.category_id = category_id),
+    (this.gender = gender);
 }
 
+//  ***** ADD USER CODE HERE *****, this is dummy
 // create the users
 let users = [
-  new user("freelancer", "asda", "mahmood", "yes", "01/10/1999", "female"),
-  new user("user", "mm111231", "abdoooo", "asdassas", "01/10/2010", "male"),
+  new user("freelancer", "asda", "mahmood", "yes", "01/10/1999", 1, "female"),
+  new user("user", "mm111231", "abdoooo", "asdassas", "01/10/2010", 1, "male"),
 ];
 
 // Grabbing Clicked Row
@@ -27,6 +37,15 @@ function popup(caller) {
   data-dismiss="modal"
 >
   Ban User
+</button>
+  `);
+  $("#banButton").append(`<button
+  type="button"
+  class="btn btn-danger"
+  onclick="unbanUser('${caller}')"
+  data-dismiss="modal"
+>
+  UnBan User
 </button>
   `);
   $("#exampleModalCenter").modal(focus);
@@ -100,9 +119,6 @@ function hideUnselected(val) {
 // creating the rows (dynamically)
 function createRows() {
   let rowArray = [];
-  console.log(users);
-  console.log(Object.keys(users).length);
-  console.log(users[1]);
   for (let i = 0; i < users.length; i++) {
     console.log("test");
     rowArray[
